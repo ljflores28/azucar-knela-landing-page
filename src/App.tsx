@@ -5,6 +5,7 @@ import CarruselCatalogo from "./components/template/CarruselCatalogo";
 import CarruselResenas from "./components/template/CarruselResenas";
 import ParallaxSection from "./components/template/ParallaxSection";
 import useScrollSection from "./hook/useScrollTrasicion";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
 
@@ -45,7 +46,7 @@ const App: React.FC = () => {
 
       <ParallaxSection
         id="section4"
-        backgroundImage="/public/bg-rosa.jpg"
+        backgroundImage="/public/bg-violeta.jpg"
         nextBackgroundImage="/public/bg-violeta.jpg"
         isVisible={visibleSection === 3}
       >
@@ -55,7 +56,10 @@ const App: React.FC = () => {
         </section>
       </ParallaxSection>
 
+      <Footer />
+
     </main>
+    
   );
 };
 

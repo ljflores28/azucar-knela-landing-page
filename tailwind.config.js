@@ -12,7 +12,7 @@ export default {
         'patron-rosa': "url('/public/bg-rosa.jpg')",
         'patron-turquesa': "url('/public/bg-turquesa.jpg')",
         'patron-violeta': "url('/public/bg-violeta.jpg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'footer-texture': "url('/public/bg-rosa-con-logo.jpg')",
       }
     },
     fontFamily :{ 
