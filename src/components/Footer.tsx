@@ -7,11 +7,15 @@ import { PiWhatsappLogoDuotone } from "react-icons/pi";
 import { PiFacebookLogoDuotone } from "react-icons/pi";
 import { PiTiktokLogoDuotone } from "react-icons/pi";
 
+interface Props {
+    id: string
+}
 
-const Footer : React.FC = () : JSX.Element => {
+const Footer : React.FC<Props> = ({id}) : JSX.Element => {
+
     return (
 
-        <footer className=" bg-[#B0AEEF] w-full">
+        <footer id={id} className=" bg-[#B0AEEF] w-full">
              <h1 className="font-righteous text-4xl text-center pt-10">Contactanos en cualquier momento</h1>
             <div className="px-[10vw] grid grid-cols-2 items-center">
                 <div className="p-5">

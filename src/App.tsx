@@ -14,7 +14,7 @@ const App: React.FC = () => {
   return (
     <main className="">
       <ParallaxSection
-        id="section1"
+        id="header"
         backgroundImage="/public/bg-rosa.jpg"
         nextBackgroundImage="/public/bg-turquesa.jpg"
         isVisible={visibleSection === 0}
@@ -30,7 +30,7 @@ const App: React.FC = () => {
         prevBackgroundImage="/public/bg-turquesa.jpg"
         isVisible={visibleSection === 1}
       >
-        <Divider fill="#FFB1D6" />
+        <Divider id="section2-1" fill="#FFB1D6" />
         <CarruselCatalogo />
       </ParallaxSection>
 
@@ -40,7 +40,7 @@ const App: React.FC = () => {
         nextBackgroundImage="/public/bg-turquesa.jpg"
         isVisible={visibleSection === 2}
       >
-        <Divider fill="#88EADA" />
+        <Divider  id="section3-1"  fill="#88EADA" />
         <CarruselResenas />
       </ParallaxSection>
 
@@ -50,13 +50,13 @@ const App: React.FC = () => {
         nextBackgroundImage="/public/bg-violeta.jpg"
         isVisible={visibleSection === 3}
       >
-        <Divider fill="#B0AEEF" />
+        <Divider  id="section4-1"  fill="#B0AEEF" />
         <section className="bg-white flex flex-col gap-10 text-center p-12">
           CTA
         </section>
       </ParallaxSection>
 
-      <Footer />
+      <Footer id="footer" />
 
     </main>
     
