@@ -3,115 +3,78 @@ import { SplideSlide } from "@splidejs/react-splide";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import CarruselWrapper from "../hoc/CarruselWrapper";
 
+type reviewCard = {
+  urlImagen: string,
+  nombre: string,
+  descripcion: string,
+  reviewStars: number
+};
+
+const reviewList: reviewCard[] = [
+  {
+    "urlImagen": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
+    "nombre": "leopoldo flores",
+    "descripcion": "tremendo local lo recomiendo al 100%",
+    "reviewStars": 4
+  },
+  {
+    "urlImagen": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
+    "nombre": "leopoldo flores",
+    "descripcion": "tremendo local lo recomiendo al 100%",
+    "reviewStars": 2
+  },
+  {
+    "urlImagen": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
+    "nombre": "leopoldo flores",
+    "descripcion": "tremendo local lo recomiendo al 100%",
+    "reviewStars": 5
+  },
+  {
+    "urlImagen": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
+    "nombre": "leopoldo flores",
+    "descripcion": "tremendo local lo recomiendo al 100%",
+    "reviewStars": 5
+  }
+];
+
 const Resenas: React.FC = () => {
-  const reviews = (
-    <>
-    <SplideSlide>
+  
+  const StarsReviews = (startsNumber: number) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++){
+      (i <= startsNumber) ? 
+       stars.push(<FaStar className={"text-yellow-400"} />) :
+       stars.push(<FaRegStar />)
+    } 
+    return stars;
+  }
+  
+  const reviewCards = reviewList.map((review) => {
+    return <SplideSlide>
       <div className=" bg-slate-200 flex flex-col items-center w-[270px] h-[381px] shadow-lg rounded-lg p-10 gap-2">
         <img
-          src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg"
+          src={review.urlImagen}
           className=" rounded-full object-cover w-28"
         />
         <div className="flex gap-1 text-lg">
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaRegStar />
-          <FaRegStar />
+          {StarsReviews(review.reviewStars)}
         </div>
-        <h1 className=" text-xl font-righteous font-semibold">
-          Leopoldo Flores
+          <h1 className=" text-xl font-righteous font-semibold">
+          {review.nombre}
         </h1>
-        <p className=" text-normal font-sourceSans font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p className=" text-normal font-sourceSans font-light">
+          {review.descripcion}
+        </p>
         <img src="google-logo.png" alt="" className=" w-10 mt-auto" />
       </div>
     </SplideSlide>
-    <SplideSlide>
-      <div className=" bg-slate-200 flex flex-col items-center w-[270px] h-[381px]  shadow-lg rounded-lg p-10 gap-2">
-        <img
-          src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg"
-          className=" rounded-full object-cover w-28"
-        />
-        <div className="flex gap-1 text-lg">
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaRegStar />
-          <FaRegStar />
-        </div>
-        <h1 className=" text-xl font-righteous font-semibold">
-          Leopoldo Flores
-        </h1>
-        <p className=" text-normal font-sourceSans font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        <img src="google-logo.png" alt="" className="w-10 mt-auto" />
-      </div>
-    </SplideSlide>
-    <SplideSlide>
-      <div className=" bg-slate-200 flex flex-col items-center w-[270px] h-[381px]  shadow-lg rounded-lg p-10 gap-2">
-        <img
-          src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg"
-          className=" rounded-full object-cover w-28"
-        />
-        <div className="flex gap-1 text-lg">
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaRegStar />
-          <FaRegStar />
-        </div>
-        <h1 className=" text-xl font-righteous font-semibold">
-          Leopoldo Flores
-        </h1>
-        <p className=" text-normal font-sourceSans font-light">descripcion</p>
-        <img src="google-logo.png" alt="" className=" w-10 mt-auto" />
-      </div>
-    </SplideSlide>
-    <SplideSlide>
-      <div className=" bg-slate-200 flex flex-col items-center w-[270px] h-[381px]  shadow-lg rounded-lg p-10 gap-2">
-        <img
-          src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg"
-          className=" rounded-full object-cover w-28"
-        />
-        <div className="flex gap-1 text-lg">
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaRegStar />
-          <FaRegStar />
-        </div>
-        <h1 className=" text-xl font-righteous font-semibold">
-          Leopoldo Flores
-        </h1>
-        <p className=" text-normal font-sourceSans font-light">descripcion</p>
-        <img src="google-logo.png" alt="" className=" w-10 mt-auto" />
-      </div>
-    </SplideSlide>
-    <SplideSlide>
-      <div className=" bg-slate-200 flex flex-col items-center w-[270px] h-[381px]  shadow-lg rounded-lg p-10 gap-2">
-        <img
-          src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg"
-          className=" rounded-full object-cover w-28"
-        />
-        <div className="flex gap-1 text-lg">
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaStar className=" text-yellow-400 " />
-          <FaRegStar />
-          <FaRegStar />
-        </div>
-        <h1 className=" text-xl font-righteous font-semibold">
-          Leopoldo Flores
-        </h1>
-        <p className=" text-normal font-sourceSans font-light">descripcion</p>
-        <img src="google-logo.png" alt="" className=" w-10 mt-auto" />
-      </div>
-    </SplideSlide>
-    
-    </>
-    
-  );
+  });
 
-  return reviews;
+  return (
+    <>
+      {reviewCards}
+    </>
+    ); 
 };
 
 export default CarruselWrapper(Resenas, 3);
