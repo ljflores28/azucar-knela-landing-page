@@ -6,3 +6,22 @@
 html {
     scroll-behavior: smooth;
 }
+
+
+.splide__pagination {
+    bottom: -2em;
+}
+
+.splide__pagination__page.is-active {
+    background: #FEB1D5;
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+.splide__pagination__page {
+    background: #B0AEEF;
+}
+
+.splide__arrows .splide__arrow {
+    background-color: #88EADA;
+}

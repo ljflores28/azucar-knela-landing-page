@@ -8,8 +8,6 @@ const useScrollSection = (sectionClass: string) => {
         const sections = document.querySelectorAll<HTMLDivElement>(sectionClass);
         const scrollPosition = window.scrollY;
 
-        console.log(sections)
-
         sections.forEach((section, index) => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;

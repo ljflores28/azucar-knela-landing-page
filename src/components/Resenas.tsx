@@ -49,9 +49,9 @@ const Resenas: React.FC = () => {
     return stars;
   }
   
-  const reviewCards = reviewList.map((review) => {
-    return <SplideSlide>
-      <div className=" bg-slate-200 flex flex-col items-center w-[270px] h-[381px] shadow-lg rounded-lg p-10 gap-2">
+  const reviewCards = reviewList.map((review, index) => {
+    return <SplideSlide key={index} onClick={() => window.location.href="https://google.com"}>
+      <div className=" hover:cursor-pointer bg-slate-200 flex flex-col items-center w-[270px] h-[381px] shadow-lg rounded-lg p-10 gap-2">
         <img
           src={review.urlImagen}
           className=" rounded-full object-cover w-28"

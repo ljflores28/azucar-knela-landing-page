@@ -21,12 +21,12 @@ const Footer : React.FC<Props> = ({id}) : JSX.Element => {
                 <div className="p-5">
                     <ul className="space-y-1 text-rose-100 font-sourceSans text-xl ">
                         <li><span><MdOutlineAlternateEmail className="inline text-2xl" /></span> info@azucar-knela.com</li>
-                        <li> <span><IoPhonePortrait className=" inline text-2xl" /></span> Telefono</li>
-                        <li> <span><TbGpsFilled className="inline text-2xl" /></span> Direccion</li>
+                        <li> <span><IoPhonePortrait className=" inline text-2xl" /></span> 11-67953259</li>
+                        <li> <span><TbGpsFilled className="inline text-2xl" /></span> Maza 11, C1206 Cdad. Autónoma de Buenos Aires</li>
                     </ul>
                     <span className=" text-xl">--------------------------------------------</span>
                     <ul className="flex gap-3">
-                        <li><a href=""><PiInstagramLogoDuotone className=" inline text-3xl"  /></a></li>
+                        <li><a href="https://www.instagram.com/azucaryknela/"><PiInstagramLogoDuotone className=" inline text-3xl"  /></a></li>
                         <li><a href=""><PiWhatsappLogoDuotone className=" inline text-3xl" /></a></li>
                         <li><a href=""><PiFacebookLogoDuotone className=" inline text-3xl" /></a></li>
                         <li><a href=""><PiTiktokLogoDuotone className=" inline text-3xl" /></a></li>
