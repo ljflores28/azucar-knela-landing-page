@@ -5,6 +5,7 @@ import CarruselWrapper from "../hoc/CarruselWrapper";
 
 type reviewCard = {
   urlImagen: string,
+  fecha: string,
   nombre: string,
   descripcion: string,
   reviewStars: number
@@ -13,24 +14,28 @@ type reviewCard = {
 const reviewList: reviewCard[] = [
   {
     "urlImagen": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
+    "fecha": "2024-04-28",
     "nombre": "leopoldo flores",
-    "descripcion": "tremendo local lo recomiendo al 100%",
-    "reviewStars": 4
+    "descripcion": "tremendo local lo recomiendo al 100% son lo mejor mundial del mundo mundial",
+    "reviewStars": 5
   },
   {
     "urlImagen": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
-    "nombre": "leopoldo flores",
-    "descripcion": "tremendo local lo recomiendo al 100%",
-    "reviewStars": 2
-  },
-  {
-    "urlImagen": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
+    "fecha": "2024-04-28",
     "nombre": "leopoldo flores",
     "descripcion": "tremendo local lo recomiendo al 100%",
     "reviewStars": 5
   },
   {
     "urlImagen": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
+    "fecha": "2024-04-28",
+    "nombre": "leopoldo flores",
+    "descripcion": "tremendo local lo recomiendo al 100%",
+    "reviewStars": 5
+  },
+  {
+    "urlImagen": "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
+    "fecha": "2024-04-28",
     "nombre": "leopoldo flores",
     "descripcion": "tremendo local lo recomiendo al 100%",
     "reviewStars": 5
@@ -51,21 +56,28 @@ const Resenas: React.FC = () => {
   
   const reviewCards = reviewList.map((review, index) => {
     return <SplideSlide key={index} onClick={() => window.location.href="https://google.com"}>
-      <div className=" hover:cursor-pointer bg-slate-200 flex flex-col items-center w-[270px] h-[381px] shadow-lg rounded-lg p-10 gap-2">
-        <img
-          src={review.urlImagen}
-          className=" rounded-full object-cover w-28"
-        />
-        <div className="flex gap-1 text-lg">
+      <div className=" hover:cursor-pointer bg-violet-200 flex flex-col h-[250px] w-[351px] shadow-lg rounded-lg p-10 gap-2">
+        <div className="flex items-center gap-3 ">
+          <img
+            src={review.urlImagen}
+            className=" rounded-full object-cover w-12"
+          />
+          <div className="">
+            <h1 className=" text-xl font-righteous font-semibold">
+              {review.nombre}
+            </h1>
+            <p className=" text-start text-sm font-sourceSans font-light">2024-06-24</p>
+          </div>
+        </div>
+        <div className="flex gap-1 text-xl">
           {StarsReviews(review.reviewStars)}
         </div>
-          <h1 className=" text-xl font-righteous font-semibold">
-          {review.nombre}
-        </h1>
-        <p className=" text-normal font-sourceSans font-light">
+        <p className="text-sm text-start font-sourceSans font-semibold">
           {review.descripcion}
         </p>
-        <img src="google-logo.png" alt="" className=" w-10 mt-auto" />
+        <div className="flex justify-center mt-auto">
+          <img src="google-logo.png" alt="" className="w-12" />
+        </div>
       </div>
     </SplideSlide>
   });
@@ -77,4 +89,4 @@ const Resenas: React.FC = () => {
     ); 
 };
 
-export default CarruselWrapper(Resenas, 3);
+export default CarruselWrapper(Resenas, 2);
