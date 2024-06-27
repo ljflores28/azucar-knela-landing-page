@@ -4,9 +4,9 @@ import "@splidejs/react-splide/css";
 
 type ComponentType = React.FC;
 
-const CarruselWrapper = (Component: ComponentType, perPage: number) => {
+const CarruselWrapper = (Component: ComponentType, perPage: number, autoplay: boolean) => {
   return () => (
-    <Splide options={{ perPage , padding: '2rem', rewind: true }}>
+    <Splide options={{ perPage , padding: '2rem', rewind: true, autoplay, trimSpace: true }}>
       <Component />
     </Splide>
   );

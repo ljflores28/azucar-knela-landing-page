@@ -89,4 +89,4 @@ const Resenas: React.FC = () => {
     ); 
 };
 
-export default CarruselWrapper(Resenas, 2);
+export default CarruselWrapper(Resenas, 2, true);
