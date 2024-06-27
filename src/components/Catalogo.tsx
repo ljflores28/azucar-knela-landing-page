@@ -3,44 +3,51 @@ import { SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import CarruselWrapper from "../hoc/CarruselWrapper";
 
+type imageCard = {
+    urlImagen: string,
+    alt: string,
+}
+
+const cakeListImg: imageCard[] = [
+  {
+    'urlImagen': "Pastel1.png",
+    'alt':"Imagen Pastel 1",
+  },
+  {
+    'urlImagen': "Pastel2.png",
+    'alt':"Imagen Pastel 2",
+  },
+  {
+    'urlImagen': "Pastel3.png",
+    'alt':"Imagen Pastel 3",
+  },
+  {
+    'urlImagen': "Pastel4.png",
+    'alt':"Imagen Pastel 4",
+  },
+  {
+    'urlImagen': "Pastel5.png",
+    'alt':"Imagen Pastel 5",
+  },
+];
+
 const Catalogo: React.FC = () => {
+
+  const listaDePasteles = cakeListImg.map((imag) => {
+      return <SplideSlide>
+              <div  className="object-cover w-60 shadow-xl">
+                <img
+                  className="rounded-xl"
+                  src={imag.urlImagen}
+                  alt={imag.alt}
+                />
+              </div> 
+            </SplideSlide>
+  });
+
   return (
       <>
-          <SplideSlide >
-            <img
-              src="Pastel1.png"
-              alt="pastel 1"
-              className=" object-cover rounded-xl w-60 shadow-xl"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              src="Pastel2.png"
-              alt="pastel 1"
-              className=" object-cover rounded-xl w-60 shadow-xl"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              src="Pastel3.png"
-              alt="pastel 1"
-              className=" object-cover rounded-xl w-60 shadow-xl"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              src="Pastel4.png"
-              alt="pastel 1"
-              className=" object-cover rounded-xl w-60 shadow-xl"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <img
-              src="Pastel5.png"
-              alt="pastel 1"
-              className=" object-cover rounded-xl w-60 shadow-xl"
-            />
-          </SplideSlide>
+        {listaDePasteles}
       </>
   );
 }

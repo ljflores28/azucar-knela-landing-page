@@ -1,6 +1,6 @@
 export function Hero(){
     return (
-        <section className="bg-white h-[80vh] grid grid-cols-2 justify-items-center ">
+        <section className="bg-white h-[80vh] grid grid-cols-1 md:grid-cols-2 justify-items-center ">
             <div className="relative flex flex-col items-start justify-center p-12 bottom-10 ">
                 <div className="flex flex-col gap-4">
                     <h1 className="text-6xl font-righteous leading-[5.5rem]">Los pasteles más <br /> deliciosos de <span className=" inline-block -rotate-12 text-violet-700">BA!</span></h1>

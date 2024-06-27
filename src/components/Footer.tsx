@@ -15,9 +15,9 @@ const Footer : React.FC<Props> = ({id}) : JSX.Element => {
 
     return (
 
-        <footer id={id} className=" bg-[#B0AEEF] w-full">
+        <footer id={id} className="bg-[#B0AEEF] w-full">
              <h1 className="font-righteous text-4xl text-center pt-10">Contactanos en cualquier momento</h1>
-            <div className="px-[10vw] grid grid-cols-2 items-center">
+            <div className="px-[10vw] grid grid-cols-2 items-center justify-items-center">
                 <div className="p-5">
                     <ul className="space-y-1 text-rose-100 font-sourceSans text-xl ">
                         <li><span><MdOutlineAlternateEmail className="inline text-2xl" /></span> info@azucar-knela.com</li>
