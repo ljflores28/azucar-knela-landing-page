@@ -20,7 +20,7 @@ const ParallaxSection = ({
   return (
     <div
       id={id}
-      className="parallax-section w-full px-[10vw] relative z-10 bg-cover bg-fixed transition-opacity duration-1000"
+      className="parallax-section w-full sm:px-[5vw] md:px-[10vw] relative z-10 bg-cover bg-fixed transition-opacity duration-1000"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div
