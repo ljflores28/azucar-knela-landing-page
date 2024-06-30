@@ -13,5 +13,3 @@ const CarruselWrapper = (Component: ComponentType, perPage: number, autoplay: bo
 };
 
 export default CarruselWrapper;
-
-
