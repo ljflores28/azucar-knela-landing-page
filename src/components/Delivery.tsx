@@ -1,11 +1,11 @@
 const Delivery: React.FC = () => {
   return (
     <section className="bg-white relative flex flex-col gap-10 text-center p-12">
-      <h1 className="font-righteous sm:text-xl xl:text-4xl text-center">
+      <h1 className="font-righteous sm:text-xl md:text-2xl xl:text-4xl text-center">
         🛵 💨 A un click de tu hogar!
       </h1>
-      <div className="grid sm:grid-cols-1 xl:grid-cols-2">
-        <div className=" sm:hidden text-start p-16">
+      <div className="grid sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
+        <div className=" sm:hidden text-start p-10">
           <h2 className=" text-2xl font-righteous mb-5">¡Cerca de vos!</h2>
           <p className=" text-xl font-sourceSans">
             En <strong>Azuca & Knela</strong>, Queremos que disfrutes de
@@ -24,21 +24,21 @@ const Delivery: React.FC = () => {
             tus momentos especiales.
           </p>
         </div>
-        <div className="grid sm:grid-cols-1 xl:grid-cols-2 xl:p-10 gap-5 max-w-lg justify-self-center">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 xl:p-10 gap-5 max-w-lg justify-self-center">
           <a
-            className="sm:size-32 xl:size-44 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl duration-300 rounded-full"
+            className="sm:size-32 md:size-40 xl:size-44 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl duration-300 rounded-full"
             href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/azucar-y-knela-menu"
           >
-            <img src="pedidosya-logo.png" alt="" className="sm:size-32 xl:size-44 rounded-full" />
+            <img src="pedidosya-logo.png" alt="" className="sm:size-32 md:size-40 xl:size-44 rounded-full" />
           </a>
-          <a className="sm:size-32 xl:size-44 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl duration-300 rounded-full">
-            <img src="Rappi-logo.png" alt="" className="sm:size-32 xl:size-44 rounded-full" />
+          <a className="sm:size-32 md:size-40  xl:size-44 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl duration-300 rounded-full">
+            <img src="Rappi-logo.png" alt="" className="sm:size-32 md:size-40  xl:size-44 rounded-full" />
           </a>
-          <a className="ssm:size-32 xl:size-44 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl duration-300 rounded-full">
-            <img src="whatsapp-logo.png" alt="" className="sm:size-32 xl:size-44 rounded-full" />
+          <a className="ssm:size-32 md:size-40  xl:size-44 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl duration-300 rounded-full">
+            <img src="whatsapp-logo.png" alt="" className="sm:size-32  md:size-40 xl:size-44 rounded-full" />
           </a>
-          <div className="sm:size-32 xl:size-44rounded-full">
-            <img className="sm:size-32 xl:size-44 rounded-full" src="Logo-circular-violeta.png" alt="" />
+          <div className="sm:size-32  md:size-40 xl:size-44rounded-full">
+            <img className="sm:size-32 md:size-40 xl:size-44 rounded-full" src="Logo-circular-violeta.png" alt="" />
           </div>
         </div>
       </div>

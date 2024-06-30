@@ -1,7 +1,7 @@
 export function Divider(props: { id:string, fill: string }): JSX.Element {
   const { id, fill } = props;
   return (
-    <div className=" h-[50vh] bg-white">
+    <div className=" sm:h-[50vh] md:h-[30vh] xl:h-[50vh] bg-white">
       <svg
         className="relative -bottom-0" width="100%" height="220" fill={fill}
       >

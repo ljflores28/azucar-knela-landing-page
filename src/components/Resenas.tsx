@@ -56,8 +56,8 @@ const Resenas: React.FC = () => {
   
   const reviewCards = reviewList.map((review, index) => {
     return <SplideSlide key={index} >
-      <div className="relative hover:cursor-pointer bg-violet-200 flex flex-col sm:p-5 sm:w-[100%] sm:h-auto xl:h-[250px] xl:w-[351px] shadow-lg rounded-lg xl:p-10 gap-2">
-        <div className="flex items-center gap-3 ">
+      <div className="relative hover:cursor-pointer bg-violet-200 shadow-lg flex flex-col gap-2 sm:p-5 sm:h-auto md:p-5 md:h-auto xl:h-[250px] xl:w-[351px] rounded-lg xl:p-10">
+        <div className="flex items-start gap-3 ">
           <img
             src={review.urlImagen}
             className="rounded-full object-cover w-12"
@@ -75,8 +75,8 @@ const Resenas: React.FC = () => {
         <p className="text-sm text-start font-sourceSans font-semibold">
           {review.descripcion}
         </p>
-        <div className="absolute top-0 right-0 p-3">
-            <img src="google-logo.png" alt="" className=" sm:w-4 xl:w-12" />
+        <div className="absolute top-1 right-0 p-3">
+            <img src="google-logo.png" alt="" className=" sm:w-8 md:w-9 xl:w-10" />
           </div>
       </div>
     </SplideSlide>
