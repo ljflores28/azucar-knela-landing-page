@@ -14,37 +14,32 @@ interface Props {
 const Footer: React.FC<Props> = ({ id }): JSX.Element => {
   return (
     <footer id={id} className="bg-[#B0AEEF] w-full">
-      <h1 className="font-righteous text-4xl text-center pt-10">
+      <h1 className="font-righteous sm:text-xl xl:text-4xl text-center pt-10">
         Contactanos en cualquier momento
       </h1>
-      <div className="px-[10vw] grid grid-cols-2 items-center justify-items-center">
+      <div className="px-[10vw] grid xl:grid-cols-2 sm:grid-cols-1 items-center justify-items-center">
         <div className="p-5">
-          <ul className="space-y-1 text-rose-100 font-sourceSans text-xl ">
+          <ul className="space-y-1 text-rose-100 font-sourceSans sm:text-sm xl:text-xl ">
             <li>
               <span>
                 <MdOutlineAlternateEmail className="inline text-2xl" />
-              </span>{" "}
+              </span>
               info@azucar-knela.com
             </li>
             <li>
-              {" "}
               <span>
                 <IoPhonePortrait className=" inline text-2xl" />
-              </span>{" "}
+              </span>
               11-67953259
             </li>
             <li>
-              {" "}
               <span>
                 <TbGpsFilled className="inline text-2xl" />
-              </span>{" "}
-              Maza 11, C1206 Cdad. Autónoma de Buenos Aires
+              </span>
+              Maza 11, CABA
             </li>
           </ul>
-          <span className=" text-xl">
-            --------------------------------------------
-          </span>
-          <ul className="flex gap-3">
+          <ul className="flex sm:justify-center gap-3 py-3">
             <li>
               <a href="https://www.instagram.com/azucaryknela/">
                 <PiInstagramLogoDuotone className=" inline text-3xl" />
@@ -67,12 +62,10 @@ const Footer: React.FC<Props> = ({ id }): JSX.Element => {
             </li>
           </ul>
         </div>
-        <div className="flex justify-center items-center p-12 transition duration-200 ease-out hover:scale-105 hover:ease-in hover:rotate-1">
+        <div className=" sm:p-7 xl:p-12 transition duration-200 ease-out hover:scale-105 hover:ease-in hover:rotate-1">
             <iframe
               id="map-canvas"
-              className="map_part rounded-xl shadow-lg"
-              width="600"
-              height="300"
+              className="map_part rounded-xl shadow-lg w-auto h-auto xl:w-[600px] xl:h-[300px]"
               src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=az\xFAcar y knela&t=&z=14&ie=UTF8&iwloc=B&output=embed"
             >
             </iframe>

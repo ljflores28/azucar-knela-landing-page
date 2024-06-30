@@ -35,7 +35,7 @@ const Catalogo: React.FC = () => {
 
   const listaDePasteles = cakeListImg.map((imag) => {
       return <SplideSlide>
-              <div  className="object-cover w-60 shadow-xl ">
+              <div  className="object-cover w-70 shadow-xl ">
                 <img
                   className="rounded-xl"
                   src={imag.urlImagen}

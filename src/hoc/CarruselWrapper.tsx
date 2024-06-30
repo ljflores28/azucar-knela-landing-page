@@ -6,7 +6,7 @@ type ComponentType = React.FC;
 
 const CarruselWrapper = (Component: ComponentType, perPage: number, autoplay: boolean) => {
   return () => (
-    <Splide options={{ perPage , padding: '2rem', rewind: true, autoplay, trimSpace: true }}>
+    <Splide options={{ perPage, rewind: true, gap: 10, autoplay, trimSpace: true, mediaQuery: 'max',  breakpoints: { 440: { perPage: 1, gap: 8, perMove: 1, focus: 'center', arrows: false, autoplay: true, pagination: false } } }}>
       <Component />
     </Splide>
   );
