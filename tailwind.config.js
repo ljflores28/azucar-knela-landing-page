@@ -9,10 +9,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'patron-rosa': "url('/public/bg-rosa.jpg')",
-        'patron-turquesa': "url('/public/bg-turquesa.jpg')",
-        'patron-violeta': "url('/public/bg-violeta.jpg')",
-        'footer-texture': "url('/public/bg-rosa-con-logo.jpg')",
+        'patron-rosa': "url('bg-rosa.jpg')",
+        'patron-turquesa': "url('bg-turquesa.jpg')",
+        'patron-violeta': "url('bg-violeta.jpg')",
+        'footer-texture': "url('bg-rosa-con-logo.jpg')",
       }
     },
     fontFamily :{ 
