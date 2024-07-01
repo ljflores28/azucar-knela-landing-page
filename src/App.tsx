@@ -17,8 +17,8 @@ const App: React.FC = () => {
     <main className="">
       <ParallaxSection
         id="header"
-        backgroundImage="/public/bg-rosa.jpg"
-        nextBackgroundImage="/public/bg-turquesa.jpg"
+        backgroundImage="bg-rosa.jpg"
+        nextBackgroundImage="bg-turquesa.jpg"
         isVisible={visibleSection === 0}
       >
         <Header />
@@ -27,9 +27,9 @@ const App: React.FC = () => {
 
       <ParallaxSection
         id="section2"
-        backgroundImage="/public/bg-turquesa.jpg"
-        nextBackgroundImage="/public/bg-rosa.jpg"
-        prevBackgroundImage="/public/bg-turquesa.jpg"
+        backgroundImage="bg-turquesa.jpg"
+        nextBackgroundImage="bg-rosa.jpg"
+        prevBackgroundImage="bg-turquesa.jpg"
         isVisible={visibleSection === 1}
       >
         <Divider id="section2-1" fill="#FFB1D6" />
@@ -38,8 +38,8 @@ const App: React.FC = () => {
 
       <ParallaxSection
         id="section3"
-        backgroundImage="/public/bg-violeta.jpg"
-        nextBackgroundImage="/public/bg-turquesa.jpg"
+        backgroundImage="bg-violeta.jpg"
+        nextBackgroundImage="bg-turquesa.jpg"
         isVisible={visibleSection === 2}
       >
         <Divider  id="section3-1"  fill="#88EADA" />
@@ -48,8 +48,8 @@ const App: React.FC = () => {
 
       <ParallaxSection
         id="section4"
-        backgroundImage="/public/bg-rosa.jpg"
-        nextBackgroundImage="/public/bg-violeta.jpg"
+        backgroundImage="bg-rosa.jpg"
+        nextBackgroundImage="bg-violeta.jpg"
         isVisible={visibleSection === 3}
       >
         <Divider  id="section4-1"  fill="#B0AEEF" />
