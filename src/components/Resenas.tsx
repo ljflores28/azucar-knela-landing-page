@@ -56,8 +56,8 @@ const Resenas: React.FC = () => {
   
   const reviewCards = reviewList.map((review, index) => {
     return <SplideSlide key={index} >
-      <div className="relative hover:cursor-pointer bg-violet-200 shadow-lg flex flex-col gap-2 sm:p-5 sm:h-auto md:p-5 md:h-auto xl:h-[250px] xl:w-[351px] rounded-lg xl:p-10">
-        <div className="flex items-start gap-3 ">
+      <div className="relative rounded-lg hover:cursor-pointer bg-violet-200 shadow-lg flex flex-col gap-2 p-5 h-auto mt-5 sm:mt-0 xl:h-[250px] xl:w-[340px] xl:p-10">
+        <div className="flex items-start gap-3 w-fit ">
           <img
             src={review.urlImagen}
             className="rounded-full object-cover w-12"
@@ -76,7 +76,7 @@ const Resenas: React.FC = () => {
           {review.descripcion}
         </p>
         <div className="absolute top-1 right-0 p-3">
-            <img src="google-logo.png" alt="" className=" sm:w-8 md:w-9 xl:w-10" />
+            <img src="google-logo.png" alt="" className=" w-8 md:w-9 xl:w-10" />
           </div>
       </div>
     </SplideSlide>
@@ -89,4 +89,4 @@ const Resenas: React.FC = () => {
     ); 
 };
 
-export default CarruselWrapper(Resenas, 2, false);
+export default CarruselWrapper(Resenas);

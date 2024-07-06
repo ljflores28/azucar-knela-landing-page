@@ -35,7 +35,7 @@ const Catalogo: React.FC = () => {
 
   const listaDePasteles = cakeListImg.map((imag) => {
       return <SplideSlide>
-              <div  className="object-cover w-70 shadow-xl ">
+              <div  className="object-cover w-70 md:w-70 shadow-xl ">
                 <img
                   className="rounded-xl"
                   src={imag.urlImagen}
@@ -52,4 +52,4 @@ const Catalogo: React.FC = () => {
   );
 }
 
-export default CarruselWrapper(Catalogo, 4, false);
+export default CarruselWrapper(Catalogo);

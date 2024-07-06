@@ -1,6 +1,6 @@
 const Delivery: React.FC = () => {
   return (
-    <section className="bg-white relative flex flex-col gap-10 text-center p-12">
+    <>
       <h1 className="font-righteous sm:text-xl md:text-2xl xl:text-4xl text-center">
         🛵 💨 A un click de tu hogar!
       </h1>
@@ -42,7 +42,7 @@ const Delivery: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

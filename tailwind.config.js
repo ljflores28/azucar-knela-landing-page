@@ -17,12 +17,15 @@ export default {
     },
     fontFamily :{ 
       righteous: ["Righteous", "sans-serif"], 
-      sourceSans: ["Source Sans 3", "sans-serif"],
+      sourceSans: ["Source-Sans-3", "sans-serif"],
       pop: ["pop","sans"], 
   },
   screens: {
-    'sm': {'max': '440px'},
-    // => @media (min-width: 640px) { ... }
+    'xs': {'min': '360px'},
+    // => @media (min-width: 360px) { ... }
+    
+    'sm': {'min': '440px'},
+    // => @media (min-width: 440px) { ... }
 
     'md': {'min': '768px'},
     // => @media (min-width: 768px) { ... }

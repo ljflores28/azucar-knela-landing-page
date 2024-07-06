@@ -4,9 +4,11 @@ import "@splidejs/react-splide/css";
 
 type ComponentType = React.FC;
 
-const CarruselWrapper = (Component: ComponentType, perPage: number, autoplay: boolean) => {
+const CarruselWrapper = (Component: ComponentType) => {
   return () => (
-    <Splide options={{ perPage, rewind: true, gap: '50px', autoplay, trimSpace: true, mediaQuery: 'max',  breakpoints: { 440: { perPage: 1, gap: 8, perMove: 1, focus: 'center', arrows: false, autoplay: true, pagination: false }} }}>
+    <Splide options={{ perPage: 1, rewind: true, gap: '50px', arrows: false, autoplay: true, trimSpace: true, mediaQuery: 'min',  breakpoints: { 
+      785: { perPage: 2, gap: 8, perMove: 1, focus: 'center', arrows: true, autoplay: true, pagination: false },
+      } }}>
       <Component />
     </Splide>
   );
