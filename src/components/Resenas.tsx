@@ -62,8 +62,8 @@ const Resenas: React.FC = () => {
             src={review.urlImagen}
             className="rounded-full object-cover w-12"
           />
-          <div className="">
-            <div className=" text-lg font-merriweather font-bold">
+          <div>
+            <div className=" text-lg sm:text-xs lg:text-xl font-merriweather font-bold">
               {review.nombre}
             </div>
             <p className=" text-start text-sm font-poppins font-light">{review.fecha}</p>
