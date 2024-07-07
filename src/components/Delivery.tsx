@@ -5,7 +5,7 @@ const Delivery: React.FC = () => {
         🛵 💨 A un click de tu hogar!
       </h1>
       <div className="grid sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
-        <div className=" sm:hidden text-start p-10">
+        <div className=" hidden sm:inline-block text-start p-10">
           <h2 className=" text-2xl font-righteous mb-5">¡Cerca de vos!</h2>
           <p className=" text-xl font-sourceSans">
             En <strong>Azuca & Knela</strong>, Queremos que disfrutes de

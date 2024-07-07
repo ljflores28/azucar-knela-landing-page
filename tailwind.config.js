@@ -20,6 +20,16 @@ export default {
       sourceSans: ["Source-Sans-3", "sans-serif"],
       pop: ["pop","sans"], 
   },
+  animation: {
+    'switchBg': 'switchBg 1s linear',
+  },
+  keyframes: {
+    switchBg: {
+      '0%': { backgroundImage: "url('bg-rosa.jpg')" },
+      '50%': { backgroundImage: "url('bg-violeta.jpg')" },
+      '100%': { backgroundImage: "url('bg-turquesa.jpg')" }
+    }
+  },
   screens: {
     'xs': {'min': '360px'},
     // => @media (min-width: 360px) { ... }
