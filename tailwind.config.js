@@ -1,5 +1,4 @@
 
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -18,6 +17,8 @@ export default {
     fontFamily :{ 
       righteous: ["Righteous", "sans-serif"], 
       sourceSans: ["Source-Sans-3", "sans-serif"],
+      poppins: ['Poppins', 'sans-serif'],
+      merriweather: ['Merriweather', 'serif'],
       pop: ["pop","sans"], 
   },
   animation: {

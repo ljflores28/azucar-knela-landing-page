@@ -14,12 +14,12 @@ interface Props {
 const Footer: React.FC<Props> = ({ id }): JSX.Element => {
   return (
     <footer id={id} className="bg-[#B0AEEF] w-full">
-      <h1 className="font-righteous sm:text-xl md:text-2xl xl:text-4xl text-center pt-10">
+      <h1 className="font-merriweather sm:text-xl md:text-2xl xl:text-4xl text-center pt-10">
         Contactanos en cualquier momento
       </h1>
       <div className=" items-center justify-items-center px-[10vw] grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
         <div className="p-5">
-          <ul className="space-y-1 text-rose-100 font-sourceSans sm:text-sm xl:text-xl ">
+          <ul className="space-y-1 text-rose-100 font-poppins sm:text-sm xl:text-xl ">
             <li>
               <span>
                 <MdOutlineAlternateEmail className="inline text-2xl" />

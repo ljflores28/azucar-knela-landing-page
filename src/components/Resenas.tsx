@@ -63,21 +63,18 @@ const Resenas: React.FC = () => {
             className="rounded-full object-cover w-12"
           />
           <div className="">
-            <h1 className=" text-lg font-righteous font-semibold">
+            <div className=" text-lg font-merriweather font-bold">
               {review.nombre}
-            </h1>
-            <p className=" text-start text-sm font-sourceSans font-light">{review.fecha}</p>
+            </div>
+            <p className=" text-start text-sm font-poppins font-light">{review.fecha}</p>
           </div>
         </div>
         <div className="flex gap-1 text-xl">
           {StarsReviews(review.reviewStars)}
         </div>
-        <p className="text-sm text-start font-sourceSans font-semibold">
-          {review.descripcion}
+        <p className="text-sm text-start font-poppins font-normal italic">
+          "{review.descripcion}"
         </p>
-        <div className="absolute top-1 right-0 p-3">
-            <img src="google-logo.png" alt="" className=" w-8 md:w-9 xl:w-10" />
-          </div>
       </div>
     </SplideSlide>
   });
