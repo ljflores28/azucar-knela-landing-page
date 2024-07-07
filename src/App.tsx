@@ -28,7 +28,7 @@ const App: React.FC = () => {
             <h1 className="font-merriweather xs:mt-5 sm:mt-0 text-3xl leading-[3.0rem] md:text-4xl md:leading-[4.0rem] xl:text-6xl xl:leading-[5.0rem]">
               Los pasteles más <br /> deliciosos de <span className="inline-block -rotate-12 text-violet-700">BA!</span>
             </h1>
-            <p className="font-poppins font-light sm:text-xs md:text-sm xl:text-xl">
+            <p className="font-poppins font-light text-sm md:text-sm xl:text-xl">
               Pasteleria y postres personalizados. <br /> ¡Haz que tus momentos
               se vuelvan <br /> dulces con nosotros!
             </p>
