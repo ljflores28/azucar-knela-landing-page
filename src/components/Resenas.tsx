@@ -72,7 +72,7 @@ const Resenas: React.FC = () => {
         <div className="flex gap-1 text-xl">
           {StarsReviews(review.reviewStars)}
         </div>
-        <p className="text-sm text-start font-poppins font-normal italic">
+        <p className="text-xs sm:text-sm text-start font-poppins font-normal italic">
           "{review.descripcion}"
         </p>
       </div>
