@@ -1,12 +1,12 @@
 const Delivery: React.FC = () => {
   return (
     <section id="delivery">
-      <h2 className="font-merriweather my-10 sm:my-14 sm:text-xl md:text-2xl xl:text-4xl text-center">
+      <h2 className="font-merriweather my-10 text-2xl sm:text-3xl xl:text-4xl text-center">
         🛵 💨 A un click de tu hogar!
       </h2>
       <div className="grid sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
         <div className=" hidden sm:inline-block text-start p-10">
-          <h2 className=" text-2xl font-merriweather mb-5">¡Cerca de vos!</h2>
+          <h3 className=" text-2xl font-merriweather mb-5">¡Cerca de vos!</h3>
           <p className=" text-xl font-poppins">
             En <strong>Azuca & Knela</strong>, Queremos que disfrutes de
             nuestros exquisitos pasteles personalizados sin moverte de casa.
@@ -16,9 +16,9 @@ const Delivery: React.FC = () => {
             <strong>Rappi</strong>, listos para entregarte una explosión de
             sabor a la puerta de tu hogar. <br />
             <br />
-            <h2 className=" text-2xl font-merriweather mb-5">
+            <h3 className=" text-2xl font-merriweather mb-5">
               ¿Prefieres un trato más directo?
-            </h2>
+            </h3>
             Contáctanos por <strong>WhatsApp</strong> y te atenderemos con la
             misma dedicación y cariño. Con tán solo un clic, podemos endulzar
             tus momentos especiales.

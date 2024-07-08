@@ -6,7 +6,7 @@ import { FaStar } from 'react-icons/fa';
 const CarruselResenas: React.FC = () => {
   return (
     <section id="reseñas">
-      <h2 className="font-merriweather my-10 sm:my-14 sm:text-xl md:text-2xl xl:text-4xl"> ⭐ Así nos opinan ⭐</h2>
+      <h2 className="font-merriweather my-10 sm:my-14 text-2xl sm:text-3xl xl:text-4xl"> ⭐ Así nos opinan ⭐</h2>
       <div className='grid grid-cols-1 sm:grid-cols-8 sm:gap-6 '>
         <div className='flex flex-col justify-center items-center sm:gap-2 sm:col-span-2'>
             <h1 className='font-merriweather text-2xl sm:text-3xl xl:text-4xl '>Excelente</h1>
