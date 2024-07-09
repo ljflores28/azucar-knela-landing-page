@@ -16,9 +16,9 @@ const App: React.FC = () => {
       <header className="h-[15vh] sm:h-fit">
         <Menu />
       </header>
-      <div className="mx-auto max-w-[350px] md:max-w-3xl xl:max-w-6xl h-full p-7 bg-white">
+      <div className="p-7 bg-white mx-auto max-w-[350px] md:max-w-3xl xl:max-w-6xl">
         <Hero />
-        <main className='flex flex-col text-center gap-16 lg:gap-28 sm:p-6 md:p-12'>
+        <main className='flex flex-col text-center gap-24 sm:m-20'>
               <CarruselCatalogo />
               <CarruselResenas />
               <Delivery />

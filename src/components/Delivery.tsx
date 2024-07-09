@@ -1,7 +1,7 @@
 const Delivery: React.FC = () => {
   return (
     <section id="delivery">
-      <h2 className="font-merriweather my-10 text-2xl sm:text-3xl xl:text-4xl text-center">
+      <h2 className="font-merriweather my-14 text-2xl sm:text-3xl xl:text-4xl">
         🛵 💨 A un click de tu hogar!
       </h2>
       <div className="grid sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
