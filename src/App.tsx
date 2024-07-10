@@ -26,18 +26,18 @@ const App: React.FC = () => {
       <div className="relative z-20">
         <button
           onClick={botonMenu}
-          className="fixed flex justify-center items-center bg-fuchsia-900 hover:bg-[#BAB0EF] text-white font-bold size-14 sm:size-20 shadow-2xl shadow-slate-700 rounded-xl bottom-8 right-8 transform active:scale-75"
+          className="fixed flex justify-center items-center bg-fuchsia-900 active:bg-[#BAB0EF] text-white font-bold size-16 sm:size-20 shadow-xl shadow-slate-700 rounded-xl bottom-8 right-8 transform active:scale-75"
         >
           <RiEBike2Fill size={23} />
         </button>
         <div
-          className={`flex flex-col gap-2 fixed bottom-24 sm:bottom-32 right-10 sm:right-12
+          className={`flex flex-col gap-2 fixed bottom-28 sm:bottom-32 right-10 sm:right-11
             ${menuOpen ? "" : "hidden"}`
           }
         >
           <button
             className={menuOpen ? 
-              'flex justify-center items-center font-bold size-10 sm:size-12 rounded-lg shadow-2xl shadow-slate-700  opacity-100 transform active:scale-75' 
+              'flex justify-center items-center font-bold size-12 sm:size-14 rounded-lg shadow-2xl shadow-slate-700  opacity-100 transform active:scale-75' 
               : 
               'transition-transform transform translate-y-6 opacity-0'}
           >
@@ -45,7 +45,7 @@ const App: React.FC = () => {
           </button>
           <button
             className={menuOpen ? 
-              'flex justify-center items-centerfont-bold size-10 sm:size-12 rounded-lg shadow-2xl shadow-slate-700 transform active:scale-75' 
+              'flex justify-center items-centerfont-bold size-12 sm:size-14 rounded-lg shadow-2xl shadow-slate-700 transform active:scale-75' 
               : 
               'transition-transform translate-y-14 opacity-0'}
           >
@@ -53,7 +53,7 @@ const App: React.FC = () => {
           </button>
           <button
             className={menuOpen ? 
-              'flex justify-center items-center font-bold size-10 sm:size-12 rounded-lg shadow-2xl shadow-slate-700 transform active:scale-75' 
+              'flex justify-center items-center font-bold size-12 sm:size-14 rounded-lg shadow-2xl shadow-slate-700 transform active:scale-75' 
               : 
               'transition-transform translate-y-14 opacity-0'}
           >
