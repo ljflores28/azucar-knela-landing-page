@@ -47,3 +47,25 @@ h1, h2, h3 ,p, a {
 .splide__arrows .splide__arrow {
     background-color: #88EADA;
 }
+
+@keyframes slide-in {
+    0% {
+      transform: translateY(0) scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-100%) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateY(-100%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0) scale(0.5);
+      opacity: 0;
+    }
+  }

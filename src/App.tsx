@@ -27,37 +27,37 @@ const App: React.FC = () => {
         >
           <RiEBike2Fill fill="#ffff" size={23} />
         </button>
+        {(
         <div
-          className={`flex flex-col gap-2 fixed bottom-28 sm:bottom-32 right-10 sm:right-11
-            ${isFocused ? "" : "hidden"}`
-          }
+        className={`flex flex-col gap-2 fixed bottom-28 sm:bottom-32 right-10 sm:right-11`}
+      >
+        <button onClick={() => window.location.href="https://wa.me/c/5491167953259"}
+          className={'flex justify-center items-center font-bold size-12 sm:size-14 rounded-lg shadow-2xl shadow-slate-700  opacity-100 transform active:scale-75 animate-slide-in'}
+          style={ isFocused ? { animation: 'slide-in 0.3s forwards' } : { animation: 'slide-out 0.3s forwards' }}
         >
-          <button
-            className={isFocused ? 
-              'flex justify-center items-center font-bold size-12 sm:size-14 rounded-lg shadow-2xl shadow-slate-700  opacity-100 transform active:scale-75' 
-              : 
-              'transition-transform transform translate-y-6 opacity-0'}
-          >
-            <img src="whatsapp-logo.png" alt="" className="rounded-lg object-cover" />
-          </button>
-          <button
-            className={isFocused ? 
-              'flex justify-center items-centerfont-bold size-12 sm:size-14 rounded-lg shadow-2xl shadow-slate-700 transform active:scale-75' 
-              : 
-              'transition-transform translate-y-14 opacity-0'}
-          >
-            <img src="Rappi-logo.png" alt="" className="rounded-lg object-cover" />
-          </button>
-          <button
-            className={isFocused ? 
-              'flex justify-center items-center font-bold size-12 sm:size-14 rounded-lg shadow-2xl shadow-slate-700 transform active:scale-75' 
-              : 
-              'transition-transform translate-y-14 opacity-0'}
-          >
-            <img src="pedidosya-logo.png" alt="" className="rounded-lg object-cover" />
-          </button>
-          
-        </div>
+          <img src="whatsapp-logo.png" alt="" className="rounded-lg object-cover" />
+        </button>
+        <button
+          onClick={() => window.location.href="https://www.rappi.com.ar/restaurantes/214908-azucar-y-knela"}
+          className={'flex justify-center items-centerfont-bold size-12 sm:size-14 rounded-lg shadow-2xl shadow-slate-700 transform active:scale-75 animate-slide-in'}
+          style={ isFocused ? { animation: 'slide-in 0.3s forwards' } : { animation: 'slide-out 0.3s forwards' }}
+        >
+          <img src="Rappi-logo.png" alt="" className="rounded-lg object-cover" />
+        </button>
+        <button
+          onClick={() => window.location.href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/azucar-y-knela-menu"}
+          className={'flex justify-center items-center font-bold size-12 sm:size-14 rounded-lg shadow-2xl shadow-slate-700 transform active:scale-75 animate-slide-in'}
+          style={ isFocused ? { animation: 'slide-in 0.3s forwards' } : { animation: 'slide-out 0.3s forwards' }}
+        >
+          <img src="pedidosya-logo.png" alt="" className="rounded-lg object-cover" />
+        </button>
+        
+      </div>
+
+        )
+        
+        }
+
       </div>
       <header className="h-[15vh] sm:h-fit">
         <Menu />
