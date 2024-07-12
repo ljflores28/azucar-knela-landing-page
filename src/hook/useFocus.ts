@@ -9,17 +9,17 @@ const useFocus = <T extends HTMLElement>(): [React.RefObject<T>, boolean] => {
     const element = elementRef.current;
 
     const handleFocus = () => setIsFocused(true);
-    const handleBlur = () => setIsFocused(false);
+    const handleFocusOut = () => setTimeout( () => setIsFocused(false), 200);
 
     if (element) {
-      element.addEventListener('focus', handleFocus);
-      element.addEventListener('blur', handleBlur);
+      element.addEventListener('focusin', handleFocus);
+      element.addEventListener('focusout', handleFocusOut);
     }
 
     return () => {
       if (element) {
-        element.removeEventListener('focus', handleFocus);
-        element.removeEventListener('blur', handleBlur);
+        element.removeEventListener('focusin', handleFocus);
+        element.removeEventListener('focusout', handleFocusOut);
       }
     };
   }, []);

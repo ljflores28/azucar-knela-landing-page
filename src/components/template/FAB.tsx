@@ -28,7 +28,7 @@ const FAB = () => {
                 ? { animation: "slide-in 0.3s forwards" }
                 : { animation: "slide-out 0.3s forwards" }
             }
-            disabled={isFocused}
+            disabled={!isFocused}
           >
             <img
               src="whatsapp-logo.png"
@@ -49,7 +49,7 @@ const FAB = () => {
                 ? { animation: "slide-in 0.3s forwards" }
                 : { animation: "slide-out 0.3s forwards" }
             }
-            disabled={isFocused}
+            disabled={!isFocused}
           >
             <img
               src="Rappi-logo.png"
@@ -70,7 +70,7 @@ const FAB = () => {
                 ? { animation: "slide-in 0.3s forwards" }
                 : { animation: "slide-out 0.3s forwards" }
             }
-            disabled={isFocused}
+            disabled={!isFocused}
           >
             <img
               src="pedidosya-logo.png"
