@@ -14,7 +14,7 @@ const FAB = () => {
       </button>
       {
         <div
-          className={`flex flex-col gap-2 fixed bottom-16 sm:bottom-20 right-10 sm:right-11`}
+          className={`flex flex-col gap-2 fixed bottom-16 sm:bottom-20 right-10 sm:right-11 -z-10`}
         >
           <button
             onClick={() =>
@@ -28,6 +28,7 @@ const FAB = () => {
                 ? { animation: "slide-in 0.3s forwards" }
                 : { animation: "slide-out 0.3s forwards" }
             }
+            disabled={!isFocused}
           >
             <img
               src="whatsapp-logo.png"
@@ -48,6 +49,7 @@ const FAB = () => {
                 ? { animation: "slide-in 0.3s forwards" }
                 : { animation: "slide-out 0.3s forwards" }
             }
+            disabled={!isFocused}
           >
             <img
               src="Rappi-logo.png"
@@ -68,6 +70,7 @@ const FAB = () => {
                 ? { animation: "slide-in 0.3s forwards" }
                 : { animation: "slide-out 0.3s forwards" }
             }
+            disabled={!isFocused}
           >
             <img
               src="pedidosya-logo.png"
