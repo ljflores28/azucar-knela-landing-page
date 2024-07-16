@@ -73,7 +73,7 @@ const Resenas: React.FC = () => {
           {StarsReviews(review.reviewStars)}
         </div>
         <p className="text-xs sm:text-sm text-start font-poppins font-normal italic">
-          "{review.descripcion}"
+          <q>{review.descripcion}</q>
         </p>
       </div>
     </SplideSlide>

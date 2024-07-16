@@ -14,9 +14,9 @@ interface Props {
 const Footer: React.FC<Props> = ({ id }): JSX.Element => {
   return (
     <footer id={id} className="bg-[#B0AEEF] w-full">
-      <h1 className="font-merriweather sm:text-xl md:text-2xl xl:text-4xl text-center pt-10">
-        Contactanos en cualquier momento
-      </h1>
+      <h2 className="font-merriweather text-xl md:text-2xl xl:text-4xl text-center pt-10">
+        ¡Comunicate con nosotros!
+      </h2>
       <div className=" items-center justify-items-center px-[10vw] grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
         <div className="p-5">
           <ul className="space-y-1 text-rose-100 font-poppins sm:text-sm xl:text-xl ">
@@ -66,7 +66,7 @@ const Footer: React.FC<Props> = ({ id }): JSX.Element => {
         <div className=" mb-5 md:p-10 xl:p-12 transition duration-200 ease-out hover:scale-105 hover:ease-in hover:rotate-1">
             <iframe
               id="map-canvas"
-              className="map_part rounded-xl shadow-lg w-auto h-auto xl:w-[450px] xl:h-[200px]"
+              className="map_part rounded-xl shadow-lg w-auto h-auto xl:w-[450px] xl:h-[200px] aspect-square"
               src="https://maps.google.com/maps?width=450%&height=200%&hl=en&q=az\xFAcar y knela&t=&z=14&ie=UTF8&iwloc=B&output=embed"
             >
             </iframe>
