@@ -1,4 +1,3 @@
-import Delivery from "./components/Delivery";
 import CarruselCatalogo from "./components/template/CarruselCatalogo";
 import CarruselResenas from "./components/template/CarruselResenas";
 import Footer from "./components/Footer";
@@ -28,7 +27,6 @@ const App: React.FC = () => {
         <main className="flex flex-col text-center gap-24 sm:m-20">
           <CarruselCatalogo />
           <CarruselResenas />
-          <Delivery />
         </main>
       </div>
       <Footer id={"footer"} />

@@ -39,6 +39,7 @@ const Footer: React.FC<Props> = ({ id }): JSX.Element => {
               Maza 11, CABA
             </li>
           </ul>
+          <hr className="rounded-lg border-t-4 my-4" />
           <ul className="flex sm:justify-center gap-3 py-3">
             <li>
               <a href="https://www.instagram.com/azucaryknela/">
@@ -65,8 +66,8 @@ const Footer: React.FC<Props> = ({ id }): JSX.Element => {
         <div className=" mb-5 md:p-10 xl:p-12 transition duration-200 ease-out hover:scale-105 hover:ease-in hover:rotate-1">
             <iframe
               id="map-canvas"
-              className="map_part rounded-xl shadow-lg w-auto h-auto xl:w-[600px] xl:h-[300px]"
-              src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=az\xFAcar y knela&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+              className="map_part rounded-xl shadow-lg w-auto h-auto xl:w-[450px] xl:h-[200px]"
+              src="https://maps.google.com/maps?width=450%&height=200%&hl=en&q=az\xFAcar y knela&t=&z=14&ie=UTF8&iwloc=B&output=embed"
             >
             </iframe>
         </div>
