@@ -56,23 +56,23 @@ const Resenas: React.FC = () => {
   
   const reviewCards = reviewList.map((review, index) => {
     return <SplideSlide key={index} >
-      <div className="relative rounded-lg hover:cursor-pointer bg-violet-200 shadow-lg flex flex-col gap-2 p-5 h-auto mt-5 sm:mt-0 xl:h-[250px] xl:w-[340px] xl:p-10">
-        <div className="flex items-start gap-3 w-fit ">
+      <div className="relative rounded-lg hover:cursor-pointer bg-violet-200 shadow-lg flex flex-col gap-2 p-5 h-auto mt-5 sm:mt-0 xl:w-[340px] xl:p-5">
+        <div className="flex items-start gap-3">
           <img
             src={review.urlImagen}
-            className="rounded-full object-cover w-12"
+            className="object-cover w-12 rounded-full"
           />
           <div>
-            <div className=" text-lg sm:text-xs lg:text-xl font-merriweather font-bold">
+            <div className="text-lg font-bold sm:text-xs lg:text-xl font-merriweather">
               {review.nombre}
             </div>
-            <p className=" text-start text-sm font-poppins font-light">{review.fecha}</p>
+            <p className="text-sm font-light text-start font-poppins">{review.fecha}</p>
           </div>
         </div>
         <div className="flex gap-1 text-xl">
           {StarsReviews(review.reviewStars)}
         </div>
-        <p className="text-xs sm:text-sm text-start font-poppins font-normal italic">
+        <p className="text-xs italic font-normal sm:text-sm text-start font-poppins">
           <q>{review.descripcion}</q>
         </p>
       </div>

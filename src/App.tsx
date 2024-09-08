@@ -16,15 +16,15 @@ const App: React.FC = () => {
     <>
       <div
         id="background"
-        className="fixed bg-cover w-full h-screen -z-10 animate-switchBg"
+        className="fixed w-full h-screen bg-cover -z-10 animate-switchBg"
       />
       <FAB />
-      <header className="h-[15vh] sm:h-fit">
+      <header className="sticky top-0 z-10 sm:h-fit">
         <Menu />
       </header>
-      <div className="p-7 bg-white mx-auto max-w-[350px] md:max-w-3xl xl:max-w-6xl">
+      <div className="p-7 bg-white mx-auto max-w-[95%]">
         <Hero />
-        <main className="flex flex-col text-center gap-24 sm:m-20">
+        <main className="flex flex-col gap-8 text-center sm:m-20">
           <CarruselCatalogo />
           <CarruselResenas />
         </main>

@@ -37,7 +37,7 @@ const Catalogo: React.FC = () => {
       return <SplideSlide>
               <div  className="object-cover shadow-xl ">
                 <img
-                  className="rounded-xl"
+                  className="rounded-xl aspect-auto"
                   src={imag.urlImagen}
                   alt={imag.alt}
                 />
