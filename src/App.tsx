@@ -5,7 +5,8 @@ import useScrollPercentage from "./hook/useScrollPercentage";
 import Hero from "./components/Hero";
 import Menu from "./components/Menu";
 import FAB from "./components/template/FAB";
-
+import BannerCTA from "./components/BannerCTA";
+import QuienSomos from "./components/QuienSomos";
 
 const App: React.FC = () => {
 
@@ -25,8 +26,10 @@ const App: React.FC = () => {
       <div className="p-7 bg-white mx-auto max-w-[95%]">
         <Hero />
         <main className="flex flex-col gap-8 text-center sm:m-20">
+          <QuienSomos />
           <CarruselCatalogo />
           <CarruselResenas />
+          <BannerCTA />
         </main>
       </div>
       <Footer id={"footer"} />
