@@ -39,11 +39,15 @@ p, a {
   column-gap: normal;
 }
 
+.main-container {
+  max-width: clamp(300px, 95%, 1500px)
+}
+
+
 /* CARRUSEL SPLIDE */
 .splide__pagination {
     bottom: -1.5rem;
 }
-
 
 .splide__pagination__page.is-active {
     background: #FEB1D5;

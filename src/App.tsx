@@ -12,7 +12,6 @@ const App: React.FC = () => {
 
   useScrollPercentage();
 
-
   return (
     <>
       <div
@@ -23,7 +22,7 @@ const App: React.FC = () => {
       <header className="sticky top-0 z-10 sm:h-fit">
         <Menu />
       </header>
-      <div className="p-7 bg-white mx-auto max-w-[95%]">
+      <div className="mx-auto bg-white p-7 main-container">
         <Hero />
         <main className="flex flex-col gap-8 text-center sm:m-20">
           <QuienSomos />

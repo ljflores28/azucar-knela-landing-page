@@ -7,13 +7,13 @@ const QuienSomos: React.FC = () => {
       <h2 className="my-10 text-2xl font-merriweather sm:text-3xl xl:text-4xl">
         Bienvenido ¿Nos presentamos?
       </h2>
-      <div className="flex items-center gap-8">
+      <div className="grid items-center justify-between sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1">
         <img
-          className="w-[465px] h-[465px] aspect-square"
+          className=" w-[75%] aspect-square"
           src={ImgSvg}
           alt=""
         />
-        <p className="text-xl font-light text-justify font-poppins -tracking-wider">
+        <p className="text-lg text-left font-extralight font-poppins -tracking-wider">
           Hace 7 años llegamos desde Venezuela a Buenos Aires con pocas cosas,
           pero con muchas ganas. Tras mucha dedicación, logramos fundar nuestra
           pastelería de pasteles personalizados, donde cada creación es única,
