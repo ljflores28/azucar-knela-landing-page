@@ -1,12 +1,11 @@
 import React from "react";
 import ImgSvg from "../assets/ImgPersonal.svg";
+import HeaderH2 from './atomos/HeaderH2';
 
 const QuienSomos: React.FC = () => {
   return (
     <section id="QuienSomos">
-      <h2 className="my-10 text-2xl font-merriweather sm:text-3xl xl:text-4xl">
-        Bienvenido ¿Nos presentamos?
-      </h2>
+      <HeaderH2>Bienvenido ¿Nos presentamos?</HeaderH2>
       <div className="grid items-center justify-between sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1">
         <img
           className=" w-[75%] aspect-square"

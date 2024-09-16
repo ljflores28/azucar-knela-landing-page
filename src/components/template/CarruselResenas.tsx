@@ -2,11 +2,12 @@
 import React from 'react';
 import Resenas from '../Resenas';
 import { FaStar } from 'react-icons/fa';
+import HeaderH2 from '../atomos/HeaderH2';
 
 const CarruselResenas: React.FC = () => {
   return (
     <section id="reseñas">
-      <h2 className="my-10 text-2xl font-merriweather sm:text-3xl xl:text-4xl"> ⭐ Así nos opinan ⭐</h2>
+      <HeaderH2>⭐ Así nos opinan ⭐</HeaderH2>
       <div className='grid grid-cols-1 xl:grid-cols-8 xl:gap-6 '>
         <div className='flex flex-col items-center justify-center sm:mb-4 sm:gap-2 sm:col-span-2'>
             <h1 className='text-2xl font-merriweather sm:text-3xl xl:text-4xl '>Excelente</h1>

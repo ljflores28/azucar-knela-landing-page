@@ -1,12 +1,12 @@
+import HeaderH1 from "./atomos/HeaderH1";
+
 export default function Hero() {
 
     return (
         <section className="grid sm:grid-cols-1 md:grid-cols-2">
           {/*MENSAJE*/}
           <div className="flex flex-col self-center justify-center gap-4 mx-3">
-            <h1 className="font-merriweather xs:mt-5 sm:mt-0 text-3xl leading-[3.0rem] md:text-4xl md:leading-[4.0rem] xl:text-6xl xl:leading-[5.0rem]">
-              Las tortas más <br /> deliciosas de <span className="inline-block -rotate-12 text-violet-700">BA!</span>
-            </h1>
+            <HeaderH1>Las tortas más <br /> deliciosas de <span className='inline-block -rotate-12 text-violet-700'>BA!</span></HeaderH1>
             <p className="text-sm font-light font-poppins md:text-sm xl:text-xl">
               Pasteleria y postres personalizados.<br />¡Haz que tus momentos
               se vuelvan <br /> dulces con nosotros!

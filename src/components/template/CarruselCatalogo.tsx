@@ -1,11 +1,12 @@
 // SeccionResenas.tsx
 import React from 'react';
 import Catalogo from '../Catalogo';
+import HeaderH2 from '../atomos/HeaderH2';
 
 const CarruselCatalogo: React.FC = () => {
   return (
     <section id="catalogo">
-     <h2 className="my-10 text-2xl font-merriweather sm:text-3xl xl:text-4xl">🍰 Así lo hacemos 🍪</h2>
+     <HeaderH2>🍰 Así lo hacemos 🍪</HeaderH2>
       <Catalogo />
     </section>
   );

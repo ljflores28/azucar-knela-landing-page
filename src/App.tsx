@@ -7,6 +7,7 @@ import Menu from "./components/Menu";
 import FAB from "./components/template/FAB";
 import BannerCTA from "./components/BannerCTA";
 import QuienSomos from "./components/QuienSomos";
+import Formulario from "./components/Formulario";
 
 const App: React.FC = () => {
 
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           <CarruselCatalogo />
           <CarruselResenas />
           <BannerCTA />
+          <Formulario />
         </main>
       </div>
       <Footer id={"footer"} />

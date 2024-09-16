@@ -43,7 +43,6 @@ p, a {
   max-width: clamp(300px, 95%, 1500px)
 }
 
-
 /* CARRUSEL SPLIDE */
 .splide__pagination {
     bottom: -1.5rem;
