@@ -41,7 +41,7 @@ const FormContent: React.FC<{
     <Button
       appearance="primary"
       size="lg"
-      style={{ width: "100%", background: "#fb7185" }}
+      className=" bg-[#fb7185] w-full hover:bg-[#fb71cb] focus:bg-[#fb7185]"
       onClick={handleSubmit}
     >
       Enviar

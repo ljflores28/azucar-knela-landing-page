@@ -6,7 +6,7 @@ const QuienSomos: React.FC = () => {
   return (
     <section id="QuienSomos">
       <HeaderH2>Bienvenido ¿Nos presentamos?</HeaderH2>
-      <div className="grid items-center justify-between sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1">
+      <div className="grid items-center justify-between sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1 justify-items-center">
         <img
           className=" w-[75%] aspect-square"
           src={ImgSvg}
