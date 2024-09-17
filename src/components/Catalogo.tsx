@@ -10,23 +10,23 @@ type imageCard = {
 
 const cakeListImg: imageCard[] = [
   {
-    'urlImagen': "Pastel1.png",
+    'urlImagen': "images/Pastel1.png",
     'alt':"Imagen Pastel 1",
   },
   {
-    'urlImagen': "Pastel2.png",
+    'urlImagen': "images/Pastel2.png",
     'alt':"Imagen Pastel 2",
   },
   {
-    'urlImagen': "Pastel3.png",
+    'urlImagen': "images/Pastel3.png",
     'alt':"Imagen Pastel 3",
   },
   {
-    'urlImagen': "Pastel4.png",
+    'urlImagen': "images/Pastel4.png",
     'alt':"Imagen Pastel 4",
   },
   {
-    'urlImagen': "Pastel5.png",
+    'urlImagen': "images/Pastel5.png",
     'alt':"Imagen Pastel 5",
   },
 ];

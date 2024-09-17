@@ -1,5 +1,5 @@
 import React from "react";
-import ImgSvg from "../assets/ImgPersonal.svg";
+import ImgSvg from "../assets/svg/ImgPersonal.svg";
 import HeaderH2 from './atomos/HeaderH2';
 
 const QuienSomos: React.FC = () => {

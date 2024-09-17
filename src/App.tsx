@@ -10,7 +10,6 @@ import QuienSomos from "./components/QuienSomos";
 import Formulario from "./components/Formulario";
 
 const App: React.FC = () => {
-
   useScrollPercentage();
 
   return (
@@ -20,7 +19,7 @@ const App: React.FC = () => {
         className="fixed w-full h-screen bg-cover -z-10 animate-switchBg"
       />
       <FAB />
-      <header className="sticky top-0 z-10 sm:h-fit">
+      <header className="sticky top-0 z-10 bg-white sm:h-fit">
         <Menu />
       </header>
       <div className="mx-auto bg-white p-7 main-container">
@@ -33,7 +32,7 @@ const App: React.FC = () => {
           <Formulario />
         </main>
       </div>
-      <Footer id={"footer"} />
+      <Footer id="footer" />
     </>
   );
 };
