@@ -43,6 +43,11 @@ p, a {
   max-width: clamp(300px, 92%, 1500px)
 }
 
+/* .main-container {
+  animation: fadeOut 2s forwards;
+  animation-timeline: scroll();
+} */
+
 /* CARRUSEL SPLIDE */
 .splide__pagination {
     bottom: -1.5rem;
@@ -61,6 +66,11 @@ p, a {
 .splide__arrows .splide__arrow {
     background-color: #88EADA;
 }
+
+/* @keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;} 
+}  */
 
 @keyframes slide-in {
     0% {
