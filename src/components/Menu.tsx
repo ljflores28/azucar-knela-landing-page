@@ -1,7 +1,6 @@
 export default function Menu() {
     return (
-      <section>
-        <div className="bg-white shadow-md flex flex-col justify-center items-center max-h-44 min-h-28 px-[10vw] sm:relative sm:flex-row sm:justify-between">
+        <div className="bg-white shadow-md flex flex-col justify-center items-center max-h-44 min-h-28 px-[10vw] sm:relative sm:flex-row sm:justify-between 2xl:justify-around">
           <div className="max-w-40">
             <img
               src="images/Logo-rosa.png"
@@ -33,7 +32,6 @@ export default function Menu() {
             </a>
           </nav>
         </div>
-      </section>
     );
   }
   

@@ -40,7 +40,7 @@ p, a {
 }
 
 .main-container {
-  max-width: clamp(300px, 95%, 1500px)
+  max-width: clamp(300px, 92%, 1500px)
 }
 
 /* CARRUSEL SPLIDE */

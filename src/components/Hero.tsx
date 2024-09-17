@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
       {/* MENSAJE */}
-      <div className="flex flex-col justify-center gap-4 mx-3">
+      <div className="flex flex-col justify-center gap-4 mx-auto">
         <HeaderH1>
           Las tortas más <br /> deliciosas de{" "}
           <span className="inline-block -rotate-12 text-violet-700">BA!</span>
