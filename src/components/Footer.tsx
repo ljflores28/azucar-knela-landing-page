@@ -31,7 +31,7 @@ const Footer: React.FC<Props> = ({ id }): JSX.Element => {
             <li>
               <span className="sr-only">Dirección:</span>
               <TbGpsFilled className="inline text-2xl" aria-hidden="true" />
-              <span className="ml-2">Maza 11, CABA</span>
+              <a  href="https://maps.app.goo.gl/hkm1CHvnMks4rH7U7" className="ml-2">Maza 11, CABA</a>
             </li>
           </ul>
           <hr className="my-4 border-t-2 rounded-lg" />

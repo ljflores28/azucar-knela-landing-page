@@ -60,6 +60,7 @@ const Resenas: React.FC = () => {
         <div className="flex items-start gap-3">
           <img
             src={review.urlImagen}
+            alt="avatar de usuario"
             className="object-cover w-12 rounded-full"
           />
           <div>

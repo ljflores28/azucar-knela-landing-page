@@ -33,8 +33,8 @@ const cakeListImg: imageCard[] = [
 
 const Catalogo: React.FC = () => {
 
-  const listaDePasteles = cakeListImg.map((imag) => {
-      return <SplideSlide>
+  const listaDePasteles = cakeListImg.map((imag,index) => {
+      return <SplideSlide key={index}>
               <div  className="object-cover shadow-xl ">
                 <img
                   className="rounded-xl aspect-auto"
