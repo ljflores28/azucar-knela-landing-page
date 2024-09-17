@@ -35,7 +35,7 @@ export default function Hero() {
           className="relative"
         />
         <img
-          src="images/cake-hero.png"
+          src="images/cake-hero.webp"
           alt="Deliciosa torta personalizada"
           className="absolute"
         />
