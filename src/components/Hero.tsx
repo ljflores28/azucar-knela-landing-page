@@ -30,14 +30,12 @@ export default function Hero() {
       {/* IMAGEN */}
       <div className="relative flex items-center justify-center mt-4 sm:mt-0">
         <img
-          src={blob}
-          loading="lazy"
+          srcSet={blob}
           alt="Fondo decorativo en forma de blob"
           className="relative"
         />
         <img
-          src="images/cake-hero.webp"
-          loading="lazy"
+          srcSet="images/cake-hero.webp"
           alt="Deliciosa torta personalizada"
           className="absolute"
         />
