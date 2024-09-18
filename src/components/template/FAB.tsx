@@ -32,7 +32,7 @@ const FAB: React.FC = () => {
             }
           >
             <img
-              src="images/whatsapp-logo.png"
+              src="images/whatsapp-logo.webp"
               alt="WhatsApp Logo"
               className="object-cover rounded-lg"
             />
@@ -51,7 +51,7 @@ const FAB: React.FC = () => {
             }
           >
             <img
-              src="images/Rappi-logo.png"
+              src="images/Rappi-logo.webp"
               alt="Rappi Logo"
               className="object-cover rounded-lg"
             />
@@ -70,7 +70,7 @@ const FAB: React.FC = () => {
             }
           >
             <img
-              src="images/pedidosya-logo.png"
+              src="images/pedidosya-logo.webp"
               alt="PedidosYa Logo"
               className="object-cover rounded-lg"
             />

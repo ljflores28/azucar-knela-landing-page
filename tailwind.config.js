@@ -8,10 +8,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'patron-rosa': "url('/public/images/bg-rosa.jpg')",
-        'patron-turquesa': "url('/public/images/bg-turquesa.jpg')",
-        'patron-violeta': "url('/public/images/bg-violeta.jpg')",
-        'footer-texture': "url('/public/images/bg-rosa-con-logo.jpg')",
+        'patron-rosa': "url('/public/images/bg-rosa.webp')",
+        'patron-turquesa': "url('/public/images/bg-turquesa.webp')",
+        'patron-violeta': "url('/public/images/bg-violeta.webp')",
+        'footer-texture': "url('/public/images/bg-rosa-con-logo.webp')",
       }
     },
     fontFamily :{ 
@@ -23,9 +23,9 @@ export default {
   },
   keyframes: {
     switchBg: {
-      '0%': { backgroundImage: "url('/public/images/bg-rosa.jpg')" },
-      '50%': { backgroundImage: "url('/public/images/bg-violeta.jpg')" },
-      '100%': { backgroundImage: "url('/public/images/bg-turquesa.jpg')" }
+      '0%': { backgroundImage: "url('/public/images/bg-rosa.webp')" },
+      '50%': { backgroundImage: "url('/public/images/bg-violeta.webp')" },
+      '100%': { backgroundImage: "url('/public/images/bg-turquesa.webp')" }
     }
   },
   screens: {

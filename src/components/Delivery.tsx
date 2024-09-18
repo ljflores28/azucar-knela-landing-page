@@ -29,7 +29,7 @@ const Delivery: React.FC = () => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img src="images/pedidosya-logo.png" alt="PedidosYa Logo" className="w-32 rounded-full md:w-40 xl:w-44" />
+            <img src="images/pedidosya-logo.webp" alt="PedidosYa Logo" className="w-32 rounded-full md:w-40 xl:w-44" />
           </a>
 
           {/* Rappi */}
@@ -37,7 +37,7 @@ const Delivery: React.FC = () => {
             className="w-32 transition duration-300 ease-in-out rounded-full md:w-40 xl:w-44 hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
             href="#"
           >
-            <img src="images/Rappi-logo.png" alt="Rappi Logo" className="w-32 rounded-full md:w-40 xl:w-44" />
+            <img src="images/Rappi-logo.webp" alt="Rappi Logo" className="w-32 rounded-full md:w-40 xl:w-44" />
           </a>
 
           {/* WhatsApp */}
@@ -47,12 +47,12 @@ const Delivery: React.FC = () => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img src="images/whatsapp-logo.png" alt="WhatsApp Logo" className="w-32 rounded-full md:w-40 xl:w-44" />
+            <img src="images/whatsapp-logo.webp" alt="WhatsApp Logo" className="w-32 rounded-full md:w-40 xl:w-44" />
           </a>
 
           {/* Logo */}
           <div className="w-32 rounded-full md:w-40 xl:w-44">
-            <img className="w-32 rounded-full md:w-40 xl:w-44" src="Logo-circular-violeta.png" alt="Azuca & Knela Logo" />
+            <img className="w-32 rounded-full md:w-40 xl:w-44" src="Logo-circular-violeta.webp" alt="Azuca & Knela Logo" />
           </div>
         </div>
       </div>

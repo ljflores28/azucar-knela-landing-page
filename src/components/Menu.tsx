@@ -3,7 +3,7 @@ export default function Menu() {
         <div className="bg-white shadow-md flex flex-col justify-center items-center max-h-44 min-h-28 px-[10vw] sm:relative sm:flex-row sm:justify-between 2xl:justify-around">
           <div className="max-w-40">
             <img
-              src="images/Logo-rosa.png"
+              src="images/Logo-rosa.webp"
               alt="Logo de Azucar y Knela"
               className="bg-white"
             />
