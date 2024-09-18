@@ -35,13 +35,12 @@ const Catalogo: React.FC = () => {
 
   const listaDePasteles = cakeListImg.map((imag,index) => {
       return <SplideSlide key={index}>
-              <div  className="object-cover shadow-xl ">
                 <img
                   className="rounded-xl aspect-auto"
-                  src={imag.urlImagen}
+                  srcSet={imag.urlImagen}
                   alt={imag.alt}
+                  style={{objectFit: 'cover'}}
                 />
-              </div> 
             </SplideSlide>
   });
 
