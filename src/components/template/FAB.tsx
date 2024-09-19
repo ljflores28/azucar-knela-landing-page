@@ -1,3 +1,4 @@
+import { GiShop } from "react-icons/gi";
 import useFocus from "../../hook/useFocus";
 import { RiEBike2Fill } from "react-icons/ri";
 
@@ -20,22 +21,21 @@ const FAB: React.FC = () => {
           aria-live="polite"
         >
           <a
-            href="https://wa.me/c/5491167953259"
+            href="http://mpago.li/2Sn1Myp"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Contact us on WhatsApp"
-            className="flex items-center justify-center text-lg font-bold transform rounded-lg shadow-2xl opacity-100 sm:text-xl shadow-slate-700 active:scale-75 animate-slide-in size-12 sm:size-14"
+            className="flex items-center justify-center text-lg font-bold transform rounded-lg shadow-2xl opacity-100 sm:text-xl shadow-slate-700 active:scale-75 animate-slide-in size-12 sm:size-14 bg-[#00A8EA]"
             style={
               isFocused 
               ? { animation: "slide-in 0.3s forwards" }
               : { animation: "slide-out 0.3s forwards" }
             }
           >
-            <img
-              src="images/whatsapp-logo.webp"
-              alt="WhatsApp Logo"
-              className="object-cover rounded-lg"
-            />
+            <div className="flex flex-col items-center">
+              <GiShop size={25} color="fff" aria-label="Mercado Pago Delivery"/>
+              <span className="text-xs text-white ">MP</span>    
+            </div>
           </a>
 
           <a
