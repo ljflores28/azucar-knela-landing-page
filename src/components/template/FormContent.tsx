@@ -18,7 +18,7 @@ const FormContent: React.FC<{
     <DatePickerInput id="fechaCelebracion" onChange={setFecha} />
 
     <Stack.Item alignSelf="flex-start">
-        <FormLabel htmlFor="nombre" text="Dinos tu nombre:" />
+        <FormLabel htmlFor="nombre" text="Cual es tu nombre:" />
     </Stack.Item>
     <InputField
       id="nombre"
@@ -35,7 +35,7 @@ const FormContent: React.FC<{
       placeholder="Describe tu pastel"
       onChange={setDescripcion}
       as="textarea"
-      maxLength={200}
+      maxLength={100}
     />
 
     <Button

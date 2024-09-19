@@ -37,9 +37,15 @@ const Formulario: React.FC = () => {
       return;
     }
 
+    const mensajeWs = `Soy ${nombre}, necesito en la fecha ${fecha.toLocaleDateString()} un pastel con estas características: ${descripcion}`
+
+
+    window.location.href = 'https://wa.me/5491128852558?text='.concat(mensajeWs);
     setMensaje(
       `Soy ${nombre}, necesito en la fecha ${fecha.toLocaleDateString()} un pastel con estas características: ${descripcion}`
     );
+
+    
     showNotification("success", "Solicitud enviada correctamente.");
   };
 
