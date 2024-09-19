@@ -1,10 +1,11 @@
 import { Button } from "rsuite";
 import HeaderH1 from "./atomos/HeaderH1";
 import blob from '../assets/svg/blob.svg';
+import { Props } from "../types/Interfaces";
 
-export default function Hero() {
+const Hero : React.FC<Props> = ({ id }): JSX.Element => {
   return (
-    <section className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
+    <section id={id} className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
       {/* MENSAJE */}
       <div className="flex flex-col justify-center gap-4 mx-auto">
         <HeaderH1>
@@ -22,6 +23,7 @@ export default function Hero() {
             size="lg"
             className="bg-[#fb7185] w-full sm:w-fit hover:bg-[#fb71cb] focus:bg-[#fb7185]"
             aria-label="Pedir presupuesto"
+            href="#Formulario"
           >
             ¡Pedí tu presupuesto!
           </Button>
@@ -43,3 +45,5 @@ export default function Hero() {
     </section>
   );
 }
+
+export default Hero;

@@ -15,24 +15,24 @@ const App: React.FC = () => {
   return (
     <>
       <div
-        id="background"
+        id="Background"
         className="fixed w-full h-screen bg-cover -z-10 animate-switchBg"
       />
-      <FAB />
+      <FAB id={"FAB"} />
       <header className="sticky top-0 z-10 bg-white sm:h-fit">
-        <Menu />
+        <Menu id={"Menu"} />
       </header>
       <div className="mx-auto bg-white p-7 main-container">
-        <Hero />
+        <Hero id={"Hero"} />
         <main className="flex flex-col gap-8 text-center sm:m-20">
-          <QuienSomos />
-          <CarruselCatalogo />
-          <CarruselResenas />
-          <BannerCTA />
-          <Formulario />
+          <QuienSomos id={"QuienSomos"} />
+          <CarruselCatalogo id={"Catalogo"} />
+          <CarruselResenas id={"Reseñas"} />
+          <BannerCTA id={"BannerCTA"} />
+          <Formulario id={"Formulario"} />
         </main>
       </div>
-      <Footer id="footer" />
+      <Footer id="Footer" />
     </>
   );
 };

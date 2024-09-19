@@ -1,6 +1,10 @@
-export default function Menu() {
+import { Props } from "../types/Interfaces";
+
+
+const Menu : React.FC<Props> = ({ id }): JSX.Element => {
+    
     return (
-        <div className="bg-white shadow-md flex flex-col justify-center items-center max-h-44 min-h-28 px-[10vw] sm:relative sm:flex-row sm:justify-between 2xl:justify-around">
+        <section id={id} className="bg-white shadow-md flex flex-col justify-center items-center max-h-44 min-h-28 px-[10vw] sm:relative sm:flex-row sm:justify-between 2xl:justify-around">
           <div className="max-w-40">
             <img
               src="images/Logo-rosa.webp"
@@ -10,28 +14,29 @@ export default function Menu() {
           </div>
           <nav className="flex items-center gap-5 font-poppins">
             <a
-              href="#catalogo"
+              href="#Catalogo"
               aria-label="Ir al catálogo"
               className="p-2 hover:text-violet-300 focus:text-violet-300"
             >
               Catálogo
             </a>
             <a
-              href="#reseñas"
+              href="#Reseñas"
               aria-label="Ir a opiniones"
               className="p-2 hover:text-violet-300 focus:text-violet-300"
             >
               Opiniones
             </a>
             <a
-              href="#footer"
+              href="#Footer"
               aria-label="Ir a contacto"
               className="p-2 hover:text-violet-300 focus:text-violet-300"
             >
               Contacto
             </a>
           </nav>
-        </div>
+        </section>
     );
   }
   
+  export default Menu;

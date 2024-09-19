@@ -3,10 +3,7 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoPhonePortrait } from "react-icons/io5";
 import { TbGpsFilled } from "react-icons/tb";
 import { PiInstagramLogoDuotone, PiWhatsappLogoDuotone, PiFacebookLogoDuotone, PiTiktokLogoDuotone } from "react-icons/pi";
-
-interface Props {
-  id: string;
-}
+import { Props } from "../types/Interfaces";
 
 const Footer: React.FC<Props> = ({ id }): JSX.Element => {
   return (

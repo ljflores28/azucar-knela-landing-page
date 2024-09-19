@@ -63,11 +63,11 @@ const Resenas: React.FC = () => {
             alt="avatar de usuario"
             className="object-cover w-12 rounded-full"
           />
-          <div>
+          <div className="text-start">
             <div className="text-lg font-bold sm:text-xs lg:text-xl font-merriweather">
               {review.nombre}
             </div>
-            <p className="text-sm font-light text-start font-poppins">{review.fecha}</p>
+            <p className="text-sm font-light font-poppins">{review.fecha}</p>
           </div>
         </div>
         <div className="flex gap-1 text-xl">

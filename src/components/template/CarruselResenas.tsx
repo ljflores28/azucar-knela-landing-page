@@ -1,11 +1,11 @@
-import React from 'react';
 import Resenas from '../Resenas';
 import { FaStar } from 'react-icons/fa';
 import HeaderH2 from '../atomos/HeaderH2';
+import { Props } from '../../types/Interfaces';
 
-const CarruselResenas: React.FC = () => {
+const CarruselResenas : React.FC<Props> = ({ id }): JSX.Element => {
   return (
-    <section id="reseñas" aria-labelledby="reseñas-title">
+    <section id={id} aria-labelledby="reseñas-title">
       <HeaderH2>⭐ Así nos opinan ⭐</HeaderH2>
       <div className='grid grid-cols-1 xl:grid-cols-8 xl:gap-6'>
         <div className='flex flex-col items-center justify-center sm:mb-4 sm:gap-2 sm:col-span-2'>

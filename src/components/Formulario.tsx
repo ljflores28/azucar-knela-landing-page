@@ -3,8 +3,9 @@ import { Notification, useToaster } from "rsuite";
 import HeaderH2 from "./atomos/HeaderH2";
 import FormContent from "./template/FormContent";
 import "rsuite/dist/rsuite-no-reset.min.css";
+import { Props } from "../types/Interfaces";
 
-const Formulario: React.FC = () => {
+const Formulario : React.FC<Props> = ({ id }): JSX.Element =>  {
   const [nombre, setNombre] = useState("");
   const [fecha, setFecha] = useState<Date | null>(null);
   const [descripcion, setDescripcion] = useState("");
@@ -50,7 +51,7 @@ const Formulario: React.FC = () => {
   };
 
   return (
-    <section id="QuienSomos" aria-labelledby="section-title">
+    <section id={id} aria-labelledby="section-title">
       <HeaderH2>¡Pedí tu torta personalizada!</HeaderH2>
       <div className="grid items-center justify-center gap-4 justify-items-center sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1">
         {/* Formulario */}

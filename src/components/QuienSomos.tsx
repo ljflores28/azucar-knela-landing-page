@@ -1,10 +1,10 @@
-import React from "react";
 import ImgSvg from "../assets/svg/ImgPersonal.svg";
+import { Props } from "../types/Interfaces";
 import HeaderH2 from './atomos/HeaderH2';
 
-const QuienSomos: React.FC = () => {
+const QuienSomos : React.FC<Props> = ({ id }): JSX.Element => {
   return (
-    <section id="QuienSomos">
+    <section id={id}>
       <HeaderH2>Bienvenido ¿Nos presentamos?</HeaderH2>
       <div className="grid items-center justify-between sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1 justify-items-center">
         <img

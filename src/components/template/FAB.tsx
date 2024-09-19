@@ -1,12 +1,13 @@
 import { GiShop } from "react-icons/gi";
 import useFocus from "../../hook/useFocus";
 import { RiEBike2Fill } from "react-icons/ri";
+import { Props } from "../../types/Interfaces";
 
-const FAB: React.FC = () => {
+const FAB : React.FC<Props> = ({ id }): JSX.Element => {
   const [buttonRef, isFocused] = useFocus<HTMLButtonElement>();
 
   return (
-    <div className="relative z-20">
+    <section id={id} className="relative z-20">
       <button
         ref={buttonRef}
         aria-label="Floating Action Button for services"
@@ -77,7 +78,7 @@ const FAB: React.FC = () => {
           </a>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

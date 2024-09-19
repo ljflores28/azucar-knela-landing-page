@@ -3,14 +3,10 @@ import FormLabel from "../atomos/FormLabel";
 import InputField from "../atomos/InputField";
 import { Button, Stack } from "rsuite";
 import DatePickerInput from "../atomos/DatePickerInput";
+import { PropsFormulario } from "../../types/Interfaces";
 
 // Componente para el formulario
-const FormContent: React.FC<{
-  setNombre: React.Dispatch<React.SetStateAction<string>>;
-  setFecha: React.Dispatch<React.SetStateAction<Date | null>>;
-  setDescripcion: React.Dispatch<React.SetStateAction<string>>;
-  handleSubmit: () => void;
-}> = ({ setNombre, setFecha, setDescripcion, handleSubmit }) => (
+const FormContent: React.FC<PropsFormulario> = ({ setNombre, setFecha, setDescripcion, handleSubmit }) => (
   <Stack spacing={10} direction="column" alignItems="stretch">
     <Stack.Item alignSelf="flex-start">
       <FormLabel htmlFor="fechaCelebracion" text="Fecha de la celebración:" />
