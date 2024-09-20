@@ -3,7 +3,7 @@ import useFocus from "../../hook/useFocus";
 import { RiEBike2Fill } from "react-icons/ri";
 import { Props } from "../../types/Interfaces";
 
-const FAB : React.FC<Props> = ({ id }): JSX.Element => {
+const BotonFlotante : React.FC<Props> = ({ id }): JSX.Element => {
   const [buttonRef, isFocused] = useFocus<HTMLButtonElement>();
 
   return (
@@ -82,4 +82,4 @@ const FAB : React.FC<Props> = ({ id }): JSX.Element => {
   );
 };
 
-export default FAB;
+export default BotonFlotante;
