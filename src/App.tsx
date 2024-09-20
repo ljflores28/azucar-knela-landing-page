@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <header className="sticky top-0 z-10 bg-white sm:h-fit">
         <Menu id={"Menu"} />
       </header>
-      <div className="mx-auto bg-white p-7 main-container">
+      <div className="relative mx-auto overflow-hidden bg-white p-7 main-container">
         <Hero id={"Hero"} />
         <main className="flex flex-col gap-8 text-center sm:m-20">
           <QuienSomos id={"QuienSomos"} />

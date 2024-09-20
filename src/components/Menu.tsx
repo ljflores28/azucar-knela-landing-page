@@ -7,9 +7,9 @@ const Menu : React.FC<Props> = ({ id }): JSX.Element => {
         <section id={id} className="bg-white shadow-md flex flex-col justify-center items-center max-h-44 min-h-28 px-[10vw] sm:relative sm:flex-row sm:justify-between 2xl:justify-around">
           <div className="max-w-40">
             <img
-              src="images/Logo-rosa.webp"
+              src="images/Logo-violeta.webp"
               alt="Logo de Azucar y Knela"
-              className="bg-white"
+              className="mt-1 bg-white"
             />
           </div>
           <nav className="flex items-center gap-5 font-poppins">

@@ -56,8 +56,8 @@ const Resenas: React.FC = () => {
   
   const reviewCards = reviewList.map((review, index) => {
     return <SplideSlide key={index} >
-      <div className="relative rounded-lg hover:cursor-pointer bg-violet-200 shadow-lg flex flex-col gap-2 p-5 h-auto mt-5 sm:mt-0 xl:w-[340px] xl:p-5">
-        <div className="flex items-start gap-3">
+      <div className="relative flex flex-col h-auto gap-2 p-5 mt-5 rounded-lg shadow-lg hover:cursor-pointer bg-violet-200 sm:mt-0 xl:p-5">
+      <div className="flex items-start gap-3">
           <img
             src={review.urlImagen}
             alt="avatar de usuario"
