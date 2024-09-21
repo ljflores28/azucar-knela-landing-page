@@ -1,9 +1,12 @@
 /*
-  Content-Security-Policy: 
+  Content-Security-Policy: default-src 'self'; 
     script-src 'self' https://apis.google.com; 
+    style-src 'self' https://fonts.googleapis.com; 
+    img-src 'self' data: https://lh3.googleusercontent.com https://maps.google.com https://maps.gstatic.com; 
+    font-src 'self' https://fonts.gstatic.com; 
+    connect-src 'self'; 
     frame-src 'self' https://www.youtube.com https://www.google.com https://maps.google.com; 
     child-src 'self' https://www.youtube.com https://www.google.com https://maps.google.com; 
-    object-src 'none';
-    img-src 'self' data: https://lh3.googleusercontent.com https://maps.google.com https://maps.gstatic.com; 
-    
-    upgrade-insecure-requests;
+    object-src 'none'; 
+    upgrade-insecure-requests; 
+    report-uri /csp-violation-report-endpoint;
