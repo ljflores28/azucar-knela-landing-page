@@ -12,6 +12,11 @@ export default defineConfig({
     assetsInlineLimit: 4096, // Archivos menores a 4KB se inlinean
     // Límite de tamaño de chunk para lanzar advertencias
     chunkSizeWarningLimit: 500, // Advertencias si un chunk excede los 500KB
+    rollupOptions: {
+      // Configuración de Rollup (si es necesario)
+    },
+    // Hook que se ejecuta después de construir
+    outDir: 'dist',
   },
   plugins: [react(),
     // Compresión Gzip
@@ -27,7 +32,7 @@ export default defineConfig({
     }),
     // Análisis de bundle
     visualizer({
-      open: true, // Abre el reporte automáticamente tras el build
+      open: false, // Abre el reporte automáticamente tras el build
       gzipSize: true, // Incluye el tamaño de los archivos Gzip en el reporte
       brotliSize: true, // Incluye el tamaño de los archivos Brotli en el reporte
     }),
