@@ -5,7 +5,7 @@ import FormContent from "./template/FormContent";
 import "rsuite/dist/rsuite-no-reset.min.css";
 import { Props } from "../types/Interfaces";
 
-const Formulario : React.FC<Props> = ({ id }): JSX.Element =>  {
+const Formulario: React.FC<Props> = ({ id }): JSX.Element => {
   const [nombre, setNombre] = useState("");
   const [fecha, setFecha] = useState<Date | null>(null);
   const [descripcion, setDescripcion] = useState("");
@@ -38,15 +38,15 @@ const Formulario : React.FC<Props> = ({ id }): JSX.Element =>  {
       return;
     }
 
-    const mensajeWs = `Soy ${nombre}, necesito en la fecha ${fecha.toLocaleDateString()} un pastel con estas características: ${descripcion}`
+    const mensajeWs = `Soy ${nombre}, necesito en la fecha ${fecha.toLocaleDateString()} un pastel con estas características: ${descripcion}`;
 
-
-    window.location.href = 'https://wa.me/5491128852558?text='.concat(mensajeWs);
+    window.location.href = "https://wa.me/5491128852558?text=".concat(
+      mensajeWs
+    );
     setMensaje(
       `Soy ${nombre}, necesito en la fecha ${fecha.toLocaleDateString()} un pastel con estas características: ${descripcion}`
     );
 
-    
     showNotification("success", "Solicitud enviada correctamente.");
   };
 
@@ -54,17 +54,6 @@ const Formulario : React.FC<Props> = ({ id }): JSX.Element =>  {
     <section id={id} aria-labelledby="section-title">
       <HeaderH2>¡Pedí tu torta personalizada!</HeaderH2>
       <div className="grid items-center justify-center gap-4 justify-items-center sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1">
-        {/* Formulario */}
-        <div className="rounded-lg p-4 bg-[#88EADA] border-2 border-[#B0AEEF] w-[90%]">
-          <FormContent
-            setNombre={setNombre}
-            setFecha={setFecha}
-            setDescripcion={setDescripcion}
-            handleSubmit={handleSubmit}
-          />
-          {mensaje && <p className="mt-4 text-lg font-bold">{mensaje}</p>}
-        </div>
-
         {/* Descripción */}
         <div>
           <h2
@@ -76,7 +65,9 @@ const Formulario : React.FC<Props> = ({ id }): JSX.Element =>  {
           <br />
           <ul className="space-y-4 list-disc list-inside text-start">
             <li className="list-none">
-              <h3 className="text-lg font-normal font-poppins">¿Fecha de la celebración?</h3>
+              <h3 className="text-lg font-normal font-poppins">
+                ¿Fecha de la celebración?
+              </h3>
               <p className="font-light text-left">
                 Indícanos la fecha en que necesitas tu pedido.
               </p>
@@ -90,12 +81,24 @@ const Formulario : React.FC<Props> = ({ id }): JSX.Element =>  {
             </li>
 
             <li className="list-none">
-              <h3 className="text-lg font-normal font-poppins">¡Nos inspiramos en tus ideas!</h3>
+              <h3 className="text-lg font-normal font-poppins">
+                ¡Nos inspiramos en tus ideas!
+              </h3>
               <p className="font-light text-left">
                 Escríbenos tus ideas o envíanos una foto de referencia.
               </p>
             </li>
           </ul>
+        </div>
+        {/* Formulario */}
+        <div className="rounded-lg p-4 bg-[#88EADA] border-2 border-[#B0AEEF] w-[90%]">
+          <FormContent
+            setNombre={setNombre}
+            setFecha={setFecha}
+            setDescripcion={setDescripcion}
+            handleSubmit={handleSubmit}
+          />
+          {mensaje && <p className="mt-4 text-lg font-bold">{mensaje}</p>}
         </div>
       </div>
     </section>
