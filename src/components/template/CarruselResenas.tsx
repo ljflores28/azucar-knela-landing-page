@@ -6,7 +6,7 @@ import { Props } from '../../types/Interfaces';
 const CarruselResenas : React.FC<Props> = ({ id }): JSX.Element => {
   return (
     <section id={id} aria-labelledby="reseñas-title">
-      <HeaderH2>⭐ Así nos opinan ⭐</HeaderH2>
+      <HeaderH2>⭐ Nuestra comunidad ⭐</HeaderH2>
       <div className='grid grid-cols-1 xl:grid-cols-8 xl:gap-6'>
         <div className='flex flex-col items-center justify-center sm:mb-4 sm:gap-2 sm:col-span-2'>
           <h2 className='text-2xl font-merriweather sm:text-3xl xl:text-4xl'>Excelente</h2>

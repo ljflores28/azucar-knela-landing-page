@@ -13,9 +13,9 @@ const Hero : React.FC<Props> = ({ id }): JSX.Element => {
           <span className="inline-block -rotate-12 text-violet-700">BA!</span>
         </HeaderH1>
         <p className="text-sm font-light font-poppins md:text-base xl:text-xl">
-          Pastelería y postres personalizados.
+          Tortas personalizadas para toda ocación.
           <br />
-          ¡Haz que tus momentos se vuelvan <br /> dulces con nosotros!
+          Cada creación es una obra de arte, <br /> hecha con sabor y dulzura.
         </p>
         <div className="font-poppins xl:text-xl">
           <Button
@@ -25,7 +25,7 @@ const Hero : React.FC<Props> = ({ id }): JSX.Element => {
             aria-label="Pedir presupuesto"
             href="#Formulario"
           >
-            ¡Pedí tu presupuesto!
+            ¡Pedir presupuesto!
           </Button>
         </div>
       </div>
