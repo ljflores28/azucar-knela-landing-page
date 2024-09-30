@@ -40,7 +40,7 @@ const Formulario: React.FC<Props> = ({ id }): JSX.Element => {
     const mensajeWs =`
 👋 Hola, mi nombre es ${nombre},
 ✨ Necesito,${descripcion}
-🗓️ Para el día, ${fecha}
+📆 Para el día, ${fecha.toLocaleDateString()}
 
 🚨⚠️INFORMACIÓN IMPORTANTE⚠️🚨
 
