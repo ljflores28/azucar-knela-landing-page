@@ -39,7 +39,7 @@ const Formulario: React.FC<Props> = ({ id }): JSX.Element => {
 
     const mensajeWs =`
 👋 Hola, mi nombre es ${nombre},
-✨ Necesito,${descripcion}
+✨ Necesito, ${descripcion}
 📆 Para el día, ${fecha.toLocaleDateString()}
 
 🚨⚠️INFORMACIÓN IMPORTANTE⚠️🚨
@@ -49,8 +49,6 @@ const Formulario: React.FC<Props> = ({ id }): JSX.Element => {
     // Convierte el mensaje en una URL amigable para WhatsApp
     const encodedMessage = encodeURIComponent(mensajeWs);
 
-    console.log(encodedMessage)
-    
     window.location.href = `https://api.whatsapp.com/send?phone=5491167953259&text=${encodedMessage}`
 
     showNotification("success", "Solicitud enviada correctamente.");
@@ -58,7 +56,7 @@ const Formulario: React.FC<Props> = ({ id }): JSX.Element => {
 
   return (
     <section id={id} aria-labelledby="section-title">
-      <HeaderH2>✨ ¿Como pedir tu torta personalizada? ✨</HeaderH2>
+      <HeaderH2>✨ ¿Cómo pedir tu torta personalizada? ✨</HeaderH2>
       <div className="grid items-center justify-center gap-4 justify-items-center sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1">
         {/* Descripción */}
         <div>

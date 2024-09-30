@@ -13,7 +13,7 @@ const Hero : React.FC<Props> = ({ id }): JSX.Element => {
           <span className="inline-block -rotate-12 text-violet-700">BA!</span>
         </HeaderH1>
         <p className="text-sm font-light font-poppins md:text-base xl:text-xl">
-          Tortas personalizadas para toda ocación.
+          Tortas personalizadas para toda ocasión.
           <br />
           Cada creación es una obra de arte, <br /> hecha con sabor y dulzura.
         </p>

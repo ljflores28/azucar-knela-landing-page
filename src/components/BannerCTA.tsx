@@ -7,7 +7,7 @@ const BannerCTA : React.FC<Props> = ({ id }): JSX.Element =>  {
     <section id={id} className="w-full h-fit bg-[#B0AEEF] p-7 sm:p-14">
       <div className="flex flex-wrap items-center gap-3 justify-evenly">
         <p className="h-auto font-semibold text-center w-[50%] font-poppins">
-          ¡Visita nuestro catálogo de la pasteleria clasica e internacional! <br />
+          ¡Visita nuestro catálogo de tortas y postres clásicos! <br />
         </p>
         <a
           role="button"

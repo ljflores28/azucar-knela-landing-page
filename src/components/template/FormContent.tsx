@@ -8,10 +8,6 @@ import { PropsFormulario } from "../../types/Interfaces";
 // Componente para el formulario
 const FormContent: React.FC<PropsFormulario> = ({ setNombre, setFecha, setDescripcion, handleSubmit }) => (
   <Stack spacing={10} direction="column" alignItems="stretch">
-    <Stack.Item alignSelf="flex-start">
-      <FormLabel htmlFor="fechaCelebracion" text="Fecha de la celebración:" />
-    </Stack.Item>
-    <DatePickerInput id="fechaCelebracion" onChange={setFecha} />
 
     <Stack.Item alignSelf="flex-start">
         <FormLabel htmlFor="nombre" text="Cual es tu nombre:" />
@@ -22,6 +18,11 @@ const FormContent: React.FC<PropsFormulario> = ({ setNombre, setFecha, setDescri
       onChange={setNombre}
       as="input"
     />
+
+    <Stack.Item alignSelf="flex-start">
+      <FormLabel htmlFor="fechaCelebracion" text="Fecha de la celebración:" />
+    </Stack.Item>
+    <DatePickerInput id="fechaCelebracion" onChange={setFecha} />
 
     <Stack.Item alignSelf="flex-start">
         <FormLabel htmlFor="descripcion" text="Danos una breve descripción:" />
