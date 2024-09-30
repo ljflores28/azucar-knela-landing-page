@@ -18,7 +18,7 @@ const Footer: React.FC<Props> = ({ id }): JSX.Element => {
             <li>
               <span className="sr-only">Email:</span>
               <MdOutlineAlternateEmail className="inline text-2xl" aria-hidden="true" />
-              <a href="mailto:info@azucar-knela.com" className="ml-2">info@azucar-knela.com</a>
+              <a href="mailto:info@azucaryknela.com" className="ml-2">info@azucaryknela.com</a>
             </li>
             <li>
               <span className="sr-only">Teléfono:</span>
@@ -45,12 +45,12 @@ const Footer: React.FC<Props> = ({ id }): JSX.Element => {
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=100063820311531&mibextid=ZbWKwL" aria-label="Facebook">
                 <PiFacebookLogoDuotone className="inline text-3xl" />
               </a>
             </li>
             <li>
-              <a href="https://www.tiktok.com" aria-label="TikTok">
+              <a href="https://www.tiktok.com/@azucaryknela?_t=8qAGhmw6hPR&_r=1" aria-label="TikTok">
                 <PiTiktokLogoDuotone className="inline text-3xl" />
               </a>
             </li>
