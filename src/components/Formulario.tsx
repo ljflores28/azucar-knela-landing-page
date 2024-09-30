@@ -37,11 +37,21 @@ const Formulario: React.FC<Props> = ({ id }): JSX.Element => {
       return;
     }
 
-    const mensajeWs = `Soy ${nombre}, necesito en la fecha ${fecha.toLocaleDateString()} un pastel con estas características: ${descripcion}`;
+    const mensajeWs =`
+👋 Hola, mi nombre es ${nombre},
+✨ Necesito,${descripcion}
+🗓️ Para el día, ${fecha}
 
-    window.location.href = "https://wa.me/5491128852558?text=".concat(
-      mensajeWs
-    );
+🚨⚠️INFORMACIÓN IMPORTANTE⚠️🚨
+
+📸 ${nombre}, No olvides enviarnos fotos de referencia de tu diseño ideal para poder hacer un presupuesto acorde a tus necesidades.
+  `;
+    // Convierte el mensaje en una URL amigable para WhatsApp
+    const encodedMessage = encodeURIComponent(mensajeWs);
+
+    console.log(encodedMessage)
+    
+    window.location.href = `https://api.whatsapp.com/send?phone=5491167953259&text=${encodedMessage}`
 
     showNotification("success", "Solicitud enviada correctamente.");
   };

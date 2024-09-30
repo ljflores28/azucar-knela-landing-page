@@ -7,7 +7,7 @@ const BannerCTA : React.FC<Props> = ({ id }): JSX.Element =>  {
     <section id={id} className="w-full h-fit bg-[#B0AEEF] p-7 sm:p-14">
       <div className="flex flex-wrap items-center gap-3 justify-evenly">
         <p className="h-auto font-semibold text-center w-[50%] font-poppins">
-          ¡Visita nuestro catálogo de la pasteleria clasica e internacional <br />
+          ¡Visita nuestro catálogo de la pasteleria clasica e internacional! <br />
         </p>
         <a
           role="button"
@@ -17,7 +17,7 @@ const BannerCTA : React.FC<Props> = ({ id }): JSX.Element =>  {
           aria-label="Ir al catálogo de tortas clásicas"
         >
           <p className="text-sm font-semibold text-white font-poppins sm:text-xl">
-            Ir al Catálogo
+            Ir al catálogo
           </p>
           <RiWhatsappLine fill="#ffff" size={32} />
         </a>
