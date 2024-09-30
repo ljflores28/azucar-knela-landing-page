@@ -2,12 +2,6 @@
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
-  package = "netlify-plugin-cloudinary"
-
-  [plugins.inputs]
-  cloudName = "azucaryknela"
-
-[[plugins]]
   package = "netlify-plugin-inline-critical-css"
 
   # All inputs are optional, so you can omit this section.
