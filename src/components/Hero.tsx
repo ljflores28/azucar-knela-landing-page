@@ -35,6 +35,7 @@ const Hero : React.FC<Props> = ({ id }): JSX.Element => {
           srcSet={blob}
           alt="Fondo decorativo en forma de blob"
           className="relative"
+          style={{width: "-webkit-fill-available"}}
         />
         <img
           srcSet="images/cake-hero.webp"
