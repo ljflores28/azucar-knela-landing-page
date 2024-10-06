@@ -1,13 +1,11 @@
-import CarruselCatalogo from "./components/template/CarruselCatalogo";
-import CarruselResenas from "./components/template/CarruselResenas";
 import Footer from "./components/Footer";
 import useScrollPercentage from "./hook/useScrollPercentage";
-import Hero from "./components/Hero";
 import Menu from "./components/Menu";
 import BotonFlotante from "./components/template/BotonFlotante";
-import BannerCTA from "./components/BannerCTA";
-import QuienSomos from "./components/QuienSomos";
-import Formulario from "./components/Formulario";
+import HomePage from "./components/page/HomePage";
+import { Route, Routes } from "react-router-dom";
+import CatalogoClasico from "./components/page/CatalogoClasico";
+
 
 const App: React.FC = () => {
   useScrollPercentage();
@@ -23,14 +21,10 @@ const App: React.FC = () => {
         <Menu id={"Menu"} />
       </header>
       <div className="relative mx-auto overflow-hidden bg-white p-7 main-container">
-        <Hero id={"Hero"} />
-        <main className="flex flex-col gap-8 text-center sm:m-20">
-          <QuienSomos id={"QuienSomos"} />
-          <CarruselCatalogo id={"Catalogo"} />
-          <CarruselResenas id={"Reseñas"} />
-          <BannerCTA id={"BannerCTA"} />
-          <Formulario id={"Formulario"} />
-        </main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/tortas-clasicas" element={<CatalogoClasico />} />
+        </Routes>
       </div>
       <Footer id="Footer" />
     </>

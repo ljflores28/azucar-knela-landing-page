@@ -22,10 +22,10 @@ const Hero : React.FC<Props> = ({ id }): JSX.Element => {
             appearance="primary"
             size="lg"
             className="bg-[#fb7185] w-full sm:w-fit hover:bg-[#fb71cb] focus:bg-[#fb7185]"
-            aria-label="Pedir presupuesto"
+            aria-label="¡Hablemos sobre tu idea!"
             href="#Formulario"
           >
-            ¡Pedir presupuesto!
+            ¡Hablemos sobre tu idea!
           </Button>
         </div>
       </div>

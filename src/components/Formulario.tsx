@@ -64,7 +64,7 @@ const Formulario: React.FC<Props> = ({ id }): JSX.Element => {
             id="section-title"
             className="text-xl font-normal font-merriweather text-start"
           >
-            Para hacer tu idea realidad, necesitamos algo de info:
+            Para hacer tu idea realidad necesitamos:
           </h2>
           <br />
           <ul className="space-y-4 list-disc list-inside text-start">
