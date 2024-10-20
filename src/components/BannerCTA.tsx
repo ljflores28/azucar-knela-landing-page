@@ -1,6 +1,6 @@
 import { RiWhatsappLine } from "react-icons/ri";
 import { Props } from "../types/Interfaces";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 // import CatalogoClasico from "./page/CatalogoClasico";
 
@@ -13,7 +13,7 @@ const BannerCTA : React.FC<Props> = ({ id }): JSX.Element =>  {
           ¿Buscas algo más simple? Visita nuestro catálogo de tortas clásicas.
           <br />
         </p>
-        {/* <a
+        <a
           role="button"
           href="https://wa.me/c/5491167953259"
           rel="noopener noreferrer"
@@ -24,8 +24,8 @@ const BannerCTA : React.FC<Props> = ({ id }): JSX.Element =>  {
             Ir al catálogo
           </p>
           <RiWhatsappLine fill="#ffff" size={32} />
-        </a> */}
-        <Link
+        </a> 
+        {/* <Link
           role="button"
           to='/tortas-clasicas'
           rel="noopener noreferrer"
@@ -36,7 +36,7 @@ const BannerCTA : React.FC<Props> = ({ id }): JSX.Element =>  {
             Ir al catálogo
           </p>
           <RiWhatsappLine fill="#ffff" size={32} />
-        </Link>
+        </Link> */}
       </div>
     </section>
   );
