@@ -11,7 +11,7 @@ const FormContent: React.FC<PropsFormulario> = ({ setNombre, setFecha, setDescri
   <Stack spacing={10} direction="column" alignItems="stretch">
 
     <Stack.Item alignSelf="flex-start">
-        <FormLabel htmlFor="nombre" text="Danos tu nombre:" />
+        <FormLabel htmlFor="nombre" text="Indicanos tu nombre:" />
     </Stack.Item>
     <InputField
       id="nombre"

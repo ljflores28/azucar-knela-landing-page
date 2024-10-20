@@ -67,6 +67,9 @@ const Footer: React.FC<Props> = ({ id }): JSX.Element => {
           />
         </div>
       </div>
+      <div className="text-sm font-light text-center">
+        <p>Dearrollado por Leopoldo Flores C.</p>
+      </div>
     </footer>
   );
 };

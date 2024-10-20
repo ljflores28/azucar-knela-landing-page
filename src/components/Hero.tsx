@@ -25,7 +25,7 @@ const Hero : React.FC<Props> = ({ id }): JSX.Element => {
             aria-label="¡Hablemos sobre tu idea!"
             href="#Formulario"
           >
-            ¡Hablemos sobre tu idea!
+            ¿Cómo deseas tu torta?
           </Button>
         </div>
       </div>
