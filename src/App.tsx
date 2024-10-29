@@ -4,7 +4,7 @@ import Menu from "./components/Menu";
 import BotonFlotante from "./components/template/BotonFlotante";
 import HomePage from "./components/page/HomePage";
 import { Route, Routes } from "react-router-dom";
-import CatalogoClasico from "./components/page/CatalogoClasico";
+import CatalogoPage from "./components/page/CatalogoPage";
 
 
 const App: React.FC = () => {
@@ -23,7 +23,7 @@ const App: React.FC = () => {
       <div className="relative mx-auto overflow-hidden bg-white p-7 main-container">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/tortas-clasicas" element={<CatalogoClasico />} />
+          <Route path="/tortas-clasicas" element={<CatalogoPage />} />
         </Routes>
       </div>
       <Footer id="Footer" />
