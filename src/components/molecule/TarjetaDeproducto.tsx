@@ -3,25 +3,27 @@ import { SiWhatsapp } from "react-icons/si";
 import { Button, IconButton } from "rsuite";
 
 interface TarjetaProducto {
+    id: string;
     descripcion: string;
     titulo: string;
     tipoTarjeta: "vertical" | "horizontal" | "vertical-cta" | "horizontal-cta";
-    urlRedireccion: string;
     urlImagen: string;
     textoBotonCta?: string;
 }
 
+const BASE_URL = "https://api.whatsapp.com/send?phone=5491167953259&text=https://wa.me/p/${id}/5491167953259"
+
 export const TarjetaDeProducto = ({
+    id,
     descripcion,
     titulo,
-    urlRedireccion,
     urlImagen,
     tipoTarjeta,
     textoBotonCta
 }: TarjetaProducto): JSX.Element => {
     return (
         <div
-            className={`border border-solid border-violet-200 flex bg-white relative ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "w-[222px]" : "w-full"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "flex-col" : ""} ${tipoTarjeta === "vertical" ? "items-start" : "items-center"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "gap-2" : "gap-[5.24px]"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "shadow-[0px_4px_4px_#00000040]" : "shadow-[0px_2.62px_2.62px_#00000040]"} ${tipoTarjeta === "horizontal" ? "px-[3.93px] py-[6.55px]" : (tipoTarjeta === "horizontal-cta") ? "pl-[3.93px] pr-2.5 py-[6.55px]" : "px-1.5 py-2.5"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "rounded" : "rounded-[2.62px]"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "justify-center" : ""} hover:scale-105 transition delay-150 duration-300 ease-in-out`}
+            id={id} className={`border border-solid border-violet-200 flex bg-white relative ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "w-[222px] h-[380px]" : "w-full"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "flex-col" : ""} ${tipoTarjeta === "vertical" ? "items-start" : "items-center"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "gap-2" : "gap-[5.24px]"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "shadow-[0px_4px_4px_#00000040]" : "shadow-[0px_2.62px_2.62px_#00000040]"} ${tipoTarjeta === "horizontal" ? "px-[3.93px] py-[6.55px]" : (tipoTarjeta === "horizontal-cta") ? "pl-[3.93px] pr-2.5 py-[6.55px]" : "px-1.5 py-2.5"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "rounded" : "rounded-[2.62px]"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "justify-center" : ""} hover:scale-105 transition delay-150 duration-300 ease-in-out`}
         >
             <img
                 className={`object-cover relative ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "w-52" : "w-20"}`}
@@ -51,7 +53,7 @@ export const TarjetaDeProducto = ({
             {/* Cuerpo tarjeta horizontal y vertical con CTA */}
             {["horizontal-cta", "vertical-cta"].includes(tipoTarjeta) && (
                 <>
-                    <div className="relative flex flex-col items-start justify-start flex-1 gap-1 text-start grow">
+                    <div className={`relative flex flex-col items-start justify-start flex-1 ${tipoTarjeta === "vertical-cta" ? "gap-[5px]" : "gap-[3.27px]"} text-start grow`}>
                         <h2 className="relative select-none self-stretch mt-[-0.65px] [font-family:'Merriweather-Bold',Helvetica] font-bold text-[#594f59] text-[16px] tracking-[0] leading-[normal]">
                             {titulo}
                         </h2>
@@ -64,9 +66,9 @@ export const TarjetaDeProducto = ({
                     </div>
                     
                     {tipoTarjeta === "horizontal-cta" ? 
-                        <IconButton href={urlRedireccion} color="green" appearance="primary" icon={<SiWhatsapp color="white" />} /> 
+                        <IconButton href={BASE_URL.replace("${id}",id)} color="green" appearance="primary" icon={<SiWhatsapp color="white" />} /> 
                         : 
-                        <Button href={urlRedireccion} appearance="primary" color="green" endIcon={<SiWhatsapp color="white" />} >
+                        <Button href={BASE_URL.replace("${id}",id)} appearance="primary" color="green" endIcon={<SiWhatsapp color="white" />} >
                             {textoBotonCta}
                         </Button>}
                 </>

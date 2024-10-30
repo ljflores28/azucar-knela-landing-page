@@ -22,72 +22,65 @@ const CatalogoClasico : React.FC<{filtro : string}> = ({filtro}) => {
 
   const listaProductos = [
     {
-      titulo: "Torta tres leches",
+      id: "5863430510395501",
+      titulo: "Torta clásicas.",
       descripcion:
-        "Deliciosa torta humedecida en tres tipos de leches, evapodara, condensada y natural",
-      urlRedireccion: "https://wa.me/p/5863430510395501/5491167953259",
-      urlImagen: "/src/assets/Images/WhatsApp Image 2024-10-28 at 20.02.59.webp",
-      textoBotonCta: "",
+        "Cinco opciones clásicas de tortas para tu elección.",
+      urlImagen: "/src/assets/Images/torta-triple-choco.webp",
     },
     {
-      titulo: "Torta dos leches",
+      id: "8229880847134919",
+      titulo: "Brookie.",
       descripcion:
-        "Deliciosa torta humedecida en tres tipos de leches, evapodara, condensada y natural",
-      urlRedireccion: "https://azucaryknela.com",
-      urlImagen: "src/assets/Images/WhatsApp Image 2024-10-28 at 20.02.54.webp",
-      textoBotonCta: "",
+        "Deliciosa torta de bizcocho de chocolate, relleno de chocolate y frutillas (fresas), además cubierto de chocolate con topping de frutillas.",
+      urlImagen: "src/assets/Images/torta-brookie.webp"
     },
     {
-      titulo: "Tiramisu",
+      id: "5863430510395501",
+      titulo: "Torta Choco-frutillas.",
       descripcion:
-        "Deliciosa torta humedecida en tres tipos de leches, evapodara, condensada y natural",
-      urlRedireccion: "https://azucaryknela.com",
-      urlImagen: "src/assets/Images/WhatsApp%20Image%202024-10-28%20at%2020.02.55%20(2).webp",
-      textoBotonCta: "",
+        "Deliciosa torta de bizcocho de chocolate, relleno de chocolate y frutillas (fresas), además cubierto de chocolate con topping de frutillas bañadas es chocolate.",
+      urlImagen: "src/assets/Images/torta-choco-frutillas.webp"
     },
     {
-      titulo: "Torta tres leches",
+      id: "5863430510395501",
+      titulo: "Cheesecake.",
       descripcion:
-        "Deliciosa torta humedecida en tres tipos de leches, evapodara, condensada y natural",
-      urlRedireccion: "https://azucaryknela.com",
-      urlImagen: "src/assets/Images/WhatsApp Image 2024-10-28 at 20.02.59 (3).webp",
-      textoBotonCta: "",
+        "Deliciosa torta de cheescake en tres sabores. Oreo y dulce de leche, Maracuyá, Frutos rojos.",
+      urlImagen: "src/assets/Images/torta-cheesecake-frutos-rojos.webp"
     },
     {
-        titulo: "Torta tres leches",
-        descripcion:
-          "Deliciosa torta humedecida en tres tipos de leches, evapodara, condensada y natural",
-        urlRedireccion: "https://azucaryknela.com",
-        urlImagen: "src/assets/Images/WhatsApp Image 2024-10-28 at 20.02.58 (3).webp",
-        textoBotonCta: "",
+      id: "5863430510395501",
+      titulo: "Torta de Profiteroles.",
+      descripcion:
+          "Deliciosa torta de profiteroles en dos tamaños. Torre de 20 o  30 unidades.",
+      urlImagen: "src/assets/Images/torta-profiteroles.webp"
       },
       {
-        titulo: "Torta tres leches",
+        id: "5863430510395501",
+        titulo: "Biscocho desnudo.",
         descripcion:
-          "Deliciosa torta humedecida en tres tipos de leches, evapodara, condensada y natural",
-        urlRedireccion: "https://azucaryknela.com",
-        urlImagen: "src/assets/Images/WhatsApp Image 2024-10-28 at 20.02.56 (3).webp",
-        textoBotonCta: "",
+          "Deliciosa torta al natural con decoración de chocolate.",
+        urlImagen: "src/assets/Images/torta-biscocho-desnudo.webp",
       },
       {
-        titulo: "Torta tres leches",
+        id: "5863430510395501",
+        titulo: "Quesitorta.",
         descripcion:
-          "Deliciosa torta humedecida en tres tipos de leches, evapodara, condensada y natural",
-        urlRedireccion: "https://azucaryknela.com",
-        urlImagen: "src/assets/Images/WhatsApp Image 2024-10-28 at 20.02.58.webp",
-        textoBotonCta: "",
+          "Deliciosa torta de bizcocho coronado con flan casero (quesillo).",
+        urlImagen: "src/assets/Images/torta-quesitorta.webp"
       },
   ]
     .filter((p) => p.titulo.toUpperCase().includes(filtro))
     .map((producto) => {
       return (
         <TarjetaDeProducto
+          id={producto.id}
           titulo={producto.titulo}
           descripcion={producto.descripcion}
           textoBotonCta={textoDeBotonCta}
           tipoTarjeta={tipoTarjeta}
-          urlRedireccion={producto.urlRedireccion} 
-          urlImagen={producto.urlImagen}        />
+          urlImagen={producto.urlImagen} />
       );
     });
 
