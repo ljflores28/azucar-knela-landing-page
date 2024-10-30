@@ -26,49 +26,49 @@ const CatalogoClasico : React.FC<{filtro : string}> = ({filtro}) => {
       titulo: "Torta clásicas.",
       descripcion:
         "Cinco opciones clásicas de tortas para tu elección.",
-      urlImagen: "/src/assets/Images/torta-triple-choco.webp",
+      urlImagen: "images/pasteles/torta-pie-de-limon.webptorta-triple-choco.webp",
     },
     {
       id: "8229880847134919",
       titulo: "Brookie.",
       descripcion:
         "Deliciosa torta de bizcocho de chocolate, relleno de chocolate y frutillas (fresas), además cubierto de chocolate con topping de frutillas.",
-      urlImagen: "src/assets/Images/torta-brookie.webp"
+      urlImagen: "images/pasteles/torta-pie-de-limon.webptorta-brookie.webp"
     },
     {
       id: "5863430510395501",
       titulo: "Torta Choco-frutillas.",
       descripcion:
         "Deliciosa torta de bizcocho de chocolate, relleno de chocolate y frutillas (fresas), además cubierto de chocolate con topping de frutillas bañadas es chocolate.",
-      urlImagen: "src/assets/Images/torta-choco-frutillas.webp"
+      urlImagen: "images/pasteles/torta-pie-de-limon.webptorta-choco-frutillas.webp"
     },
     {
       id: "5863430510395501",
       titulo: "Cheesecake.",
       descripcion:
         "Deliciosa torta de cheescake en tres sabores. Oreo y dulce de leche, Maracuyá, Frutos rojos.",
-      urlImagen: "src/assets/Images/torta-cheesecake-frutos-rojos.webp"
+      urlImagen: "images/pasteles/torta-pie-de-limon.webptorta-cheesecake-frutos-rojos.webp"
     },
     {
       id: "5863430510395501",
       titulo: "Torta de Profiteroles.",
       descripcion:
           "Deliciosa torta de profiteroles en dos tamaños. Torre de 20 o  30 unidades.",
-      urlImagen: "src/assets/Images/torta-profiteroles.webp"
+      urlImagen: "images/pasteles/torta-pie-de-limon.webptorta-profiteroles.webp"
       },
       {
         id: "5863430510395501",
         titulo: "Biscocho desnudo.",
         descripcion:
           "Deliciosa torta al natural con decoración de chocolate.",
-        urlImagen: "src/assets/Images/torta-biscocho-desnudo.webp",
+        urlImagen: "images/pasteles/torta-pie-de-limon.webptorta-biscocho-desnudo.webp",
       },
       {
         id: "5863430510395501",
         titulo: "Quesitorta.",
         descripcion:
           "Deliciosa torta de bizcocho coronado con flan casero (quesillo).",
-        urlImagen: "src/assets/Images/torta-quesitorta.webp"
+        urlImagen: "images/pasteles/torta-pie-de-limon.webptorta-quesitorta.webp"
       },
   ]
     .filter((p) => p.titulo.toUpperCase().includes(filtro))
