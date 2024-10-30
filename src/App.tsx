@@ -23,7 +23,7 @@ const App: React.FC = () => {
       <div className="relative mx-auto overflow-hidden bg-white p-7 main-container">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/tortas-clasicas" element={<CatalogoPage />} />
+          <Route path="/catalogo-tortas-clasicas" element={<CatalogoPage />} />
         </Routes>
       </div>
       <Footer id="Footer" />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Props } from "../types/Interfaces";
 
 
@@ -13,27 +14,33 @@ const Menu : React.FC<Props> = ({ id }): JSX.Element => {
             />
           </div>
           <nav className="flex items-center gap-5 font-poppins">
-            <a
-              href="#Catalogo"
-              aria-label="Ir al catálogo"
+            <Link
+              role="button"
+              rel="noopener noreferrer"
+              to="/"
+              aria-label="Ir al home del sitio"
               className="p-2 hover:text-violet-300 focus:text-violet-300"
             >
-              Catálogo
-            </a>
-            <a
-              href="#Reseñas"
+              Home
+            </Link>
+            <Link
+              role="button"
+              rel="noopener noreferrer"
+              to='/catalogo-tortas-clasicas'
               aria-label="Ir a opiniones"
               className="p-2 hover:text-violet-300 focus:text-violet-300"
             >
-              Opiniones
-            </a>
-            <a
-              href="#Footer"
+              Catalogo
+            </Link>
+            <Link
+              role="button"
+              rel="noopener noreferrer"
+              to="https://www.instagram.com/azucaryknela/"
               aria-label="Ir a contacto"
               className="p-2 hover:text-violet-300 focus:text-violet-300"
             >
-              Contacto
-            </a>
+              Instagram
+            </Link>
           </nav>
         </section>
     );
