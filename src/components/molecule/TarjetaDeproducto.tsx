@@ -12,6 +12,7 @@ interface TarjetaProducto {
 }
 
 const BASE_URL = "https://api.whatsapp.com/send?phone=5491167953259&text=https://wa.me/p/${id}/5491167953259"
+const BASE_URL_IMG = "/images/pasteles/${imagen}";
 
 export const TarjetaDeProducto = ({
     id,
@@ -21,6 +22,7 @@ export const TarjetaDeProducto = ({
     tipoTarjeta,
     textoBotonCta
 }: TarjetaProducto): JSX.Element => {
+    const imagenPastel = BASE_URL_IMG.replace("${imagen}", urlImagen).concat(".webp");
     return (
         <div
             id={id} className={`border border-solid border-violet-200 flex bg-white relative ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "w-[222px] h-[380px]" : "w-full"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "flex-col" : ""} ${tipoTarjeta === "vertical" ? "items-start" : "items-center"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "gap-2" : "gap-[5.24px]"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "shadow-[0px_4px_4px_#00000040]" : "shadow-[0px_2.62px_2.62px_#00000040]"} ${tipoTarjeta === "horizontal" ? "px-[3.93px] py-[6.55px]" : (tipoTarjeta === "horizontal-cta") ? "pl-[3.93px] pr-2.5 py-[6.55px]" : "px-1.5 py-2.5"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "rounded" : "rounded-[2.62px]"} ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "justify-center" : ""} hover:scale-105 transition delay-150 duration-300 ease-in-out`}
@@ -28,7 +30,7 @@ export const TarjetaDeProducto = ({
             <img
                 className={`object-cover relative ${["vertical-cta", "vertical"].includes(tipoTarjeta) ? "w-52" : "w-20"}`}
                 alt={titulo}
-                src={urlImagen}
+                src={imagenPastel}
             />
             
             {/* Cuerpo tarjeta horizontal y vertical */}
