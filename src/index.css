@@ -24,6 +24,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.animation{
+  animation: focus-in-expand-fwd 0.8s both;
+}
+
 h1, h2, h3 ,p, a {
     color: #594F59;
     font-family: 'Merriweather', sans-serif;
@@ -93,4 +97,20 @@ p, a {
       transform: translateY(0) scale(0.5);
       opacity: 0;
     }
+  }
+
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: scale(0.95); /* Opcional: efecto de escala al entrar */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .fade {
+    animation: fadeInOut 0.8s ease-in-out forwards; /* Ajusta la duración según lo necesites */
   }

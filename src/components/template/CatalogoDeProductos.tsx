@@ -9,13 +9,13 @@ const CatalogoDeProductos : React.FC = () => {
     const [filtro, setFiltro] = useState("");
 
     return (
-        <>
-        <HeaderH1>Catálogo de tortas clásicas</HeaderH1>
-        <Buscador handleFilter={setFiltro} />
-        <div className="flex flex-wrap items-center justify-center gap-3">
-            <CatalogoClasico filtro={filtro}  />
+        <div className="flex flex-col gap-4 fade">
+            <HeaderH1>Catálogo de tortas clásicas</HeaderH1>
+            <Buscador handleFilter={setFiltro} />
+            <div className="flex flex-wrap items-center justify-center gap-3">
+                <CatalogoClasico filtro={filtro}  />
+            </div>
         </div>
-        </>
     )
 
 }

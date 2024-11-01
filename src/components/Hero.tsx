@@ -5,7 +5,7 @@ import { Props } from "../types/Interfaces";
 
 const Hero : React.FC<Props> = ({ id }): JSX.Element => {
   return (
-    <section id={id} className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
+    <section id={id} className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 fade">
       {/* MENSAJE */}
       <div className="flex flex-col justify-center gap-4 mx-auto">
         <HeaderH1>

@@ -2,6 +2,7 @@
 import { TarjetaDeProducto } from "./molecule/TarjetaDeproducto";
 import { useEffect, useState } from "react";
 import { isMobile } from "../utils/Utils";
+import useGoogleSheetData from "../hook/useGoogleSheetData";
 
 type TipoTarjeta =
   | "vertical"
@@ -12,6 +13,8 @@ type TipoTarjeta =
 const CatalogoClasico : React.FC<{filtro : string}> = ({filtro}) => {
   const [tipoTarjeta, setTipoTarjeta] = useState("vertical-cta" as TipoTarjeta);
 
+  const { data, loading } = useGoogleSheetData("1iQx07xo5UTPZx2KUpIV7JnWeg-Ms5trDmWtSaPlp31o", "Catalogo", "AIzaSyDiYNWUQEHMECwB6VPDNGA-qXX_ihpkHpc");
+
   useEffect(() => {
     isMobile() && setTipoTarjeta("horizontal-cta");
   }, []);
@@ -19,59 +22,9 @@ const CatalogoClasico : React.FC<{filtro : string}> = ({filtro}) => {
   const textoDeBotonCta = ["vertical", "vertical-cta"].includes(tipoTarjeta)
     ? "Pedir pow WhatsApp"
     : "";
+  
 
-  const listaProductos = [
-    {
-      id: "5863430510395501",
-      titulo: "Torta clásicas.",
-      descripcion:
-        "Cinco opciones clásicas de tortas para tu elección.",
-      urlImagen: "/images/pasteles/torta-triple-choco.webp",
-    },
-    {
-      id: "8229880847134919",
-      titulo: "Brookie.",
-      descripcion:
-        "Deliciosa torta de bizcocho de chocolate, relleno de chocolate y frutillas (fresas), además cubierto de chocolate con topping de frutillas.",
-      urlImagen: "/images/pasteles/torta-brookie.webp"
-    },
-    {
-      id: "5863430510395501",
-      titulo: "Torta Choco-frutillas.",
-      descripcion:
-        "Deliciosa torta de bizcocho de chocolate, relleno de chocolate y frutillas (fresas), además cubierto de chocolate con topping de frutillas bañadas es chocolate.",
-      urlImagen: "/images/pasteles/torta-choco-frutillas.webp"
-    },
-    {
-      id: "5863430510395501",
-      titulo: "Cheesecake.",
-      descripcion:
-        "Deliciosa torta de cheescake en tres sabores. Oreo y dulce de leche, Maracuyá, Frutos rojos.",
-      urlImagen: "/images/pasteles/torta-cheesecake-frutos-rojos.webp"
-    },
-    {
-      id: "5863430510395501",
-      titulo: "Torta de Profiteroles.",
-      descripcion:
-          "Deliciosa torta de profiteroles en dos tamaños. Torre de 20 o  30 unidades.",
-      urlImagen: "/images/pasteles/torta-profiteroles.webp"
-      },
-      {
-        id: "5863430510395501",
-        titulo: "Biscocho desnudo.",
-        descripcion:
-          "Deliciosa torta al natural con decoración de chocolate.",
-        urlImagen: "/images/pasteles/torta-biscocho-desnudo.webp",
-      },
-      {
-        id: "5863430510395501",
-        titulo: "Quesitorta.",
-        descripcion:
-          "Deliciosa torta de bizcocho coronado con flan casero (quesillo).",
-        urlImagen: "/images/pasteles/torta-quesitorta.webp"
-      },
-  ]
-    .filter((p) => p.titulo.toUpperCase().includes(filtro))
+  const listaProductos = data.filter((p) => p.titulo.toUpperCase().includes(filtro))
     .map((producto) => {
       return (
         <TarjetaDeProducto
@@ -80,12 +33,12 @@ const CatalogoClasico : React.FC<{filtro : string}> = ({filtro}) => {
           descripcion={producto.descripcion}
           textoBotonCta={textoDeBotonCta}
           tipoTarjeta={tipoTarjeta}
-          urlImagen={producto.urlImagen} />
+          urlImagen={producto.pathImg} />
       );
     });
 
   return (
-    <>{listaProductos}</>
+    <>{ loading ? <>Cargando...</> : listaProductos }</>
   );
 };
 
