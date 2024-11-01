@@ -39,7 +39,7 @@ const CatalogoClasico : React.FC<{filtro : string}> = ({filtro}) => {
     });
 
   return (
-    <>{ loading ? <Loader color="pink" size="md" content="Medium" /> : listaProductos }</>
+    <>{ loading ? <Loader className="min-h-dvh" color="pink" size="md" content="Medium" /> : listaProductos }</>
   );
 };
 
