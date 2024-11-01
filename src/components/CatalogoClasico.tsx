@@ -3,6 +3,7 @@ import { TarjetaDeProducto } from "./molecule/TarjetaDeproducto";
 import { useEffect, useState } from "react";
 import { isMobile } from "../utils/Utils";
 import useGoogleSheetData from "../hook/useGoogleSheetData";
+import { Loader } from "rsuite";
 
 type TipoTarjeta =
   | "vertical"
@@ -38,7 +39,7 @@ const CatalogoClasico : React.FC<{filtro : string}> = ({filtro}) => {
     });
 
   return (
-    <>{ loading ? <>Cargando...</> : listaProductos }</>
+    <>{ loading ? <Loader color="pink" size="md" content="Medium" /> : listaProductos }</>
   );
 };
 
