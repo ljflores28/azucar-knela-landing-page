@@ -5,6 +5,7 @@ import BotonFlotante from "./components/template/BotonFlotante";
 import HomePage from "./components/page/HomePage";
 import { Route, Routes } from "react-router-dom";
 import CatalogoPage from "./components/page/CatalogoPage";
+import LinkTreePage from "./components/page/LinkTreePage";
 
 
 const App: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/catalogo-tortas-clasicas" element={<CatalogoPage />} />
+          <Route path="/linktree" element={<LinkTreePage />} />
         </Routes>
       </div>
       <Footer id="Footer" />
