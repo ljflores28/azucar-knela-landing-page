@@ -1,7 +1,6 @@
 import { RiWhatsappLine } from "react-icons/ri";
 import { Props } from "../types/Interfaces";
-// import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import CatalogoClasico from "./page/CatalogoClasico";
 
 const BannerCTA : React.FC<Props> = ({ id }): JSX.Element =>  {
@@ -13,9 +12,9 @@ const BannerCTA : React.FC<Props> = ({ id }): JSX.Element =>  {
           ¿Buscas algo más simple? Visita nuestro catálogo de tortas clásicas.
           <br />
         </p>
-        <a
+        <Link
           role="button"
-          href="https://wa.me/c/5491167953259"
+          to='/catalogo-tortas-clasicas'
           rel="noopener noreferrer"
           className="flex items-center gap-4 p-3 sm:p-4 rounded-sm bg-[#25D366] hover:bg-green-500 transition-colors duration-300 ease-in-out"
           aria-label="Ir al catálogo de tortas clásicas"
@@ -24,19 +23,7 @@ const BannerCTA : React.FC<Props> = ({ id }): JSX.Element =>  {
             Ir al catálogo
           </p>
           <RiWhatsappLine fill="#ffff" size={32} />
-        </a> 
-        {/* <Link
-          role="button"
-          to='/tortas-clasicas'
-          rel="noopener noreferrer"
-          className="flex items-center gap-4 p-3 sm:p-4 rounded-sm bg-[#25D366] hover:bg-green-500 transition-colors duration-300 ease-in-out"
-          aria-label="Ir al catálogo de tortas clásicas"
-        >
-          <p className="text-sm font-semibold text-white font-poppins sm:text-xl">
-            Ir al catálogo
-          </p>
-          <RiWhatsappLine fill="#ffff" size={32} />
-        </Link> */}
+        </Link>
       </div>
     </section>
   );
