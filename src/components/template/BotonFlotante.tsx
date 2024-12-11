@@ -59,7 +59,7 @@ const BotonFlotante : React.FC<Props> = ({ id }): JSX.Element => {
           </a>
 
           <a
-            href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/azucar-y-knela-menu"
+            href="https://mpago.li/1dhfyMb"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Order from PedidosYa"

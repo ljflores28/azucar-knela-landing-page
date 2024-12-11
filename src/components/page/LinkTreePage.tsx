@@ -26,7 +26,7 @@ const buttonsLinktree : buttonType[] = [
       "text": "Consultas y pedidos personalizados."
     },
     {
-      "href": "https://www.pedidosya.com.ar/restaurantes/buenos-aires/azucar-y-knela-menu",
+      "href": "https://mpago.li/1dhfyMb",
       "text": "Visitanos en Pedidos Ya."
     },
     {
