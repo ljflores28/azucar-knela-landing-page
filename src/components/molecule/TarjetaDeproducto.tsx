@@ -11,7 +11,7 @@ interface TarjetaProducto {
     textoBotonCta?: string;
 }
 
-const BASE_URL = "https://api.whatsapp.com/send?phone=5491167953259&text=https://wa.me/p/${id}/5491167953259"
+const BASE_URL = "https://wa.me/p/${id}/5491167953259"
 const BASE_URL_IMG = "/images/pasteles/${imagen}";
 
 export const TarjetaDeProducto = ({
