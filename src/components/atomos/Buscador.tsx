@@ -3,12 +3,11 @@ import { Input, InputGroup } from "rsuite";
 
 const Buscador : React.FC< {handleFilter : (target : string) => void}> = ( { handleFilter } ) => {
 
-
   return (
     <>
       <InputGroup>
         <Input
-          placeholder="Buscar"
+          placeholder="Encuentra tu torta"
           onChange={(target) => {
             handleFilter(target.toUpperCase())
           }}

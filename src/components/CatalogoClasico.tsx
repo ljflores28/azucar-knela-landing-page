@@ -21,7 +21,7 @@ const CatalogoClasico : React.FC<{filtro : string}> = ({filtro}) => {
   }, []);
 
   const textoDeBotonCta = ["vertical", "vertical-cta"].includes(tipoTarjeta)
-    ? "Pedir pow WhatsApp"
+    ? "Pedir por WhatsApp"
     : "";
   
 
