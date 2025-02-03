@@ -10,7 +10,6 @@ const MensajeCta : React.FC = () => {
                     Mensaje
                 </Button>
             </div>
-
 }
 
 export default MensajeCta;
