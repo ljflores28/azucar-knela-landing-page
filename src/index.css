@@ -114,3 +114,7 @@ p, a {
   .fade {
     animation: fadeInOut 0.8s ease-in-out forwards; /* Ajusta la duración según lo necesites */
   }
+
+  .carrusel-catalogo::-webkit-scrollbar {
+    display: none;
+  }
