@@ -8,16 +8,16 @@ const CustomIcon: React.FC = () => <FaBirthdayCake color="#B0AEEF" />;
 
 // Configuración de la propiedad locale abstraída
 const datePickerLocaleConfig = {
-  sunday: "Sa",
-  monday: "Lu",
-  tuesday: "Ma",
-  wednesday: "Mi",
-  thursday: "Ju",
-  friday: "Vi",
-  saturday: "Do",
+  sunday: "Do",      // Domingo
+  monday: "Lu",      // Lunes
+  tuesday: "Ma",     // Martes
+  wednesday: "Mi",   // Miércoles
+  thursday: "Ju",    // Jueves
+  friday: "Vi",      // Viernes
+  saturday: "Sa",    // Sábado
   ok: "OK",
   today: "Hoy",
-  yesterday: "Mañana",
+  yesterday: "Ayer", // Corrección aquí
 };
 
 
